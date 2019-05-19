@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="My_QLBTS" CodeBehind="~/App_Code/My_QLBTS.cs" %>
