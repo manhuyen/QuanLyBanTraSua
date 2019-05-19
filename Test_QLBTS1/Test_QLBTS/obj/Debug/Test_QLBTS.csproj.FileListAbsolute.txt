@@ -1,0 +1,55 @@
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\bin\Debug\Test_QLBTS.exe
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\bin\Debug\Test_QLBTS.pdb
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.csprojAssemblyReference.cache
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.DangNhap.resources
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Properties.Resources.resources
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.csproj.GenerateResource.cache
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.exe
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.pdb
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Main.resources
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Menu.resources
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.TinhTien.resources
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Discount.resources
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.ThanhVien.resources
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\bin\Debug\BUS.dll
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\bin\Debug\DTO.dll
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\bin\Debug\DAL.dll
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\bin\Debug\BUS.pdb
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\bin\Debug\DTO.pdb
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\bin\Debug\DAL.pdb
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.csproj.CopyComplete
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.MainQuanLy.resources
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Form1.resources
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Change_Pass.resources
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Forget_Change.resources
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\bin\Debug\Test_QLBTS.exe.config
+C:\Users\ADMIN\source\repos\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Form2.resources
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\bin\Debug\Test_QLBTS.exe.config
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\bin\Debug\Test_QLBTS.exe
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\bin\Debug\Test_QLBTS.pdb
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\bin\Debug\BUS.dll
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\bin\Debug\DTO.dll
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\bin\Debug\DAL.dll
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\bin\Debug\BUS.pdb
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\bin\Debug\DTO.pdb
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\bin\Debug\DAL.pdb
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.csprojAssemblyReference.cache
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Change_Pass.resources
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.DangNhap.resources
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Discount.resources
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Forget_Change.resources
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Form1.resources
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Form2.resources
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Main.resources
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.MainQuanLy.resources
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Menu.resources
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Properties.Resources.resources
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.ThanhVien.resources
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.TinhTien.resources
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.csproj.GenerateResource.cache
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.csproj.CoreCompileInputs.cache
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.csproj.CopyComplete
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.exe
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.pdb
+C:\Users\DinhDan\Desktop\New folder\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Order_ThanhToan.resources

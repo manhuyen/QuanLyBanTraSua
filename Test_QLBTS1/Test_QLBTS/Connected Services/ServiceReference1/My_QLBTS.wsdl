@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="My_QLBTS" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="DoWork">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DoWorkResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xem_ThanhVien">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xem_ThanhVienResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Xem_ThanhVienResult" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Them_ThanhVien">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="matv" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="stt" type="xs:int" />
+            <xs:element minOccurs="0" name="hoten" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="loaithanhvien" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="sodt" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="diachi" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="diemtichluy" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Them_ThanhVienResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Them_ThanhVienResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xoa_ThanhVien">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="matv" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xoa_ThanhVienResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Xoa_ThanhVienResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Sua_ThanhVien">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="matv" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="stt" type="xs:int" />
+            <xs:element minOccurs="0" name="hoten" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="loaithanhvien" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="sodt" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="diachi" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="diemtichluy" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Sua_ThanhVienResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Sua_ThanhVienResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xem_DoUong">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xem_DoUongResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Xem_DoUongResult" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Them_DoUong">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="tendu" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="size" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="dongia" type="xs:double" />
+            <xs:element minOccurs="0" name="maloai" type="xs:int" />
+            <xs:element minOccurs="0" name="image" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Them_DoUongResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Them_DoUongResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xoa_DoUong">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="madu" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xoa_DoUongResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Xoa_DoUongResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Sua_DoUong">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="madu" type="xs:int" />
+            <xs:element minOccurs="0" name="tenloai" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="tendu" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="size" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="dongia" type="xs:double" />
+            <xs:element minOccurs="0" name="maloai" type="xs:int" />
+            <xs:element minOccurs="0" name="image" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Sua_DoUongResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Sua_DoUongResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xem_Topping">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xem_ToppingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Xem_ToppingResult" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Them_Topping">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="matp" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="tentp" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="gia" type="xs:double" />
+            <xs:element minOccurs="0" name="image" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Them_ToppingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Them_ToppingResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xoa_Topping">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="matp" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xoa_ToppingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Xoa_ToppingResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Sua_Topping">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="matp" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="tentp" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="gia" type="xs:double" />
+            <xs:element minOccurs="0" name="image" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Sua_ToppingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Sua_ToppingResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetID">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="taikhoan" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="matkhau" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetIDResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="GetIDResult" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetName">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="taikhoan" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="matkhau" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetNameResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="GetNameResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetPass">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="taikhoan" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="matkhau" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetPassResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="GetPassResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Quen_Pass">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="tentaikhoan" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="sodt" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="newpass" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Quen_PassResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Quen_PassResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Change_Pass">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ID" type="xs:int" />
+            <xs:element minOccurs="0" name="newpass" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Change_PassResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Change_PassResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xem_TuyTron">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="query" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xem_TuyTronResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Xem_TuyTronResult" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="DataTable" nillable="true">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:appinfo>
+              <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="IMy_QLBTS_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_ThanhVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_ThanhVien" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_ThanhVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_ThanhVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Them_ThanhVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:Them_ThanhVien" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Them_ThanhVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Them_ThanhVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xoa_ThanhVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa_ThanhVien" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xoa_ThanhVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa_ThanhVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Sua_ThanhVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_ThanhVien" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Sua_ThanhVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_ThanhVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_DoUong_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_DoUong" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_DoUong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_DoUongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Them_DoUong_InputMessage">
+    <wsdl:part name="parameters" element="tns:Them_DoUong" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Them_DoUong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Them_DoUongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xoa_DoUong_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa_DoUong" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xoa_DoUong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa_DoUongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Sua_DoUong_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_DoUong" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Sua_DoUong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_DoUongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_Topping_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_Topping" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_Topping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_ToppingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Them_Topping_InputMessage">
+    <wsdl:part name="parameters" element="tns:Them_Topping" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Them_Topping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Them_ToppingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xoa_Topping_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa_Topping" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xoa_Topping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa_ToppingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Sua_Topping_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_Topping" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Sua_Topping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_ToppingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_GetID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetID" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_GetID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_GetName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetName" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_GetName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_GetPass_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPass" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_GetPass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Quen_Pass_InputMessage">
+    <wsdl:part name="parameters" element="tns:Quen_Pass" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Quen_Pass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Quen_PassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Change_Pass_InputMessage">
+    <wsdl:part name="parameters" element="tns:Change_Pass" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Change_Pass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Change_PassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_TuyTron_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_TuyTron" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_TuyTron_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_TuyTronResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMy_QLBTS">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/DoWork" message="tns:IMy_QLBTS_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/DoWorkResponse" message="tns:IMy_QLBTS_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xem_ThanhVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_ThanhVien" message="tns:IMy_QLBTS_Xem_ThanhVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_ThanhVienResponse" message="tns:IMy_QLBTS_Xem_ThanhVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Them_ThanhVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Them_ThanhVien" message="tns:IMy_QLBTS_Them_ThanhVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Them_ThanhVienResponse" message="tns:IMy_QLBTS_Them_ThanhVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xoa_ThanhVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xoa_ThanhVien" message="tns:IMy_QLBTS_Xoa_ThanhVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xoa_ThanhVienResponse" message="tns:IMy_QLBTS_Xoa_ThanhVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sua_ThanhVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_ThanhVien" message="tns:IMy_QLBTS_Sua_ThanhVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_ThanhVienResponse" message="tns:IMy_QLBTS_Sua_ThanhVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xem_DoUong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_DoUong" message="tns:IMy_QLBTS_Xem_DoUong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_DoUongResponse" message="tns:IMy_QLBTS_Xem_DoUong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Them_DoUong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Them_DoUong" message="tns:IMy_QLBTS_Them_DoUong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Them_DoUongResponse" message="tns:IMy_QLBTS_Them_DoUong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xoa_DoUong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xoa_DoUong" message="tns:IMy_QLBTS_Xoa_DoUong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xoa_DoUongResponse" message="tns:IMy_QLBTS_Xoa_DoUong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sua_DoUong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_DoUong" message="tns:IMy_QLBTS_Sua_DoUong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_DoUongResponse" message="tns:IMy_QLBTS_Sua_DoUong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xem_Topping">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_Topping" message="tns:IMy_QLBTS_Xem_Topping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_ToppingResponse" message="tns:IMy_QLBTS_Xem_Topping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Them_Topping">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Them_Topping" message="tns:IMy_QLBTS_Them_Topping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Them_ToppingResponse" message="tns:IMy_QLBTS_Them_Topping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xoa_Topping">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xoa_Topping" message="tns:IMy_QLBTS_Xoa_Topping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xoa_ToppingResponse" message="tns:IMy_QLBTS_Xoa_Topping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sua_Topping">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_Topping" message="tns:IMy_QLBTS_Sua_Topping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_ToppingResponse" message="tns:IMy_QLBTS_Sua_Topping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/GetID" message="tns:IMy_QLBTS_GetID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/GetIDResponse" message="tns:IMy_QLBTS_GetID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/GetName" message="tns:IMy_QLBTS_GetName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/GetNameResponse" message="tns:IMy_QLBTS_GetName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/GetPass" message="tns:IMy_QLBTS_GetPass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/GetPassResponse" message="tns:IMy_QLBTS_GetPass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Quen_Pass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Quen_Pass" message="tns:IMy_QLBTS_Quen_Pass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Quen_PassResponse" message="tns:IMy_QLBTS_Quen_Pass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Change_Pass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Change_Pass" message="tns:IMy_QLBTS_Change_Pass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Change_PassResponse" message="tns:IMy_QLBTS_Change_Pass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xem_TuyTron">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_TuyTron" message="tns:IMy_QLBTS_Xem_TuyTron_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_TuyTronResponse" message="tns:IMy_QLBTS_Xem_TuyTron_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMy_QLBTS" type="tns:IMy_QLBTS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xem_ThanhVien">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xem_ThanhVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Them_ThanhVien">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Them_ThanhVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xoa_ThanhVien">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xoa_ThanhVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sua_ThanhVien">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Sua_ThanhVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xem_DoUong">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xem_DoUong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Them_DoUong">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Them_DoUong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xoa_DoUong">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xoa_DoUong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sua_DoUong">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Sua_DoUong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xem_Topping">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xem_Topping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Them_Topping">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Them_Topping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xoa_Topping">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xoa_Topping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sua_Topping">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Sua_Topping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetID">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/GetID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetName">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/GetName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPass">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/GetPass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Quen_Pass">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Quen_Pass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Change_Pass">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Change_Pass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xem_TuyTron">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xem_TuyTron" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="My_QLBTS">
+    <wsdl:port name="BasicHttpBinding_IMy_QLBTS" binding="tns:BasicHttpBinding_IMy_QLBTS">
+      <soap:address location="http://localhost:50673/My_QLBTS.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
