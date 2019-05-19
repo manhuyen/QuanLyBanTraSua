@@ -73,9 +73,9 @@ namespace Test_QLBTS
         private void btdiscount_Click(object sender, EventArgs e)
         {
 
-            panel3.Controls.Clear();
-            Discount t = new Discount();
-            panel3.Controls.Add(t);
+            Order_ThanhToan order_ThanhToan = new Order_ThanhToan();
+            order_ThanhToan.Show();
+            this.Hide();
         }
 
         private void label3_Click(object sender, EventArgs e)

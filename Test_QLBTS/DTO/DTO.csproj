@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connect.cs" />
     <Compile Include="Menu_DU.cs" />
     <Compile Include="thanhvien.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

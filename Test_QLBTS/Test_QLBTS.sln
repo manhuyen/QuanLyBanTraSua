@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.202
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_QLBTS", "Test_QLBTS\Test_QLBTS.csproj", "{564465C3-3D60-48C5-A521-1A48A63F04AB}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -14,9 +14,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{4DC11EA2-C594-45B3-BB5A-F5C6ED448519}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFService1(2)", "WCFService1\", "{BC5A88D4-334E-4E00-8C13-1AEFFCE07A1D}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFService1(1)", "WCFService1\", "{BC5A88D4-334E-4E00-8C13-1AEFFCE07A1D}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_50673"
 		Debug.AspNetCompiler.PhysicalPath = "WCFService1\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50673\"

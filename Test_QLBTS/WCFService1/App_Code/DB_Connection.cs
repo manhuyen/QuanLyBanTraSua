@@ -8,6 +8,6 @@ using System.Data.SqlClient;
 /// Summary description for DB_Connection
 /// </summary>
 public class DB_Connection
-{
-    protected SqlConnection sqlConnection = new SqlConnection("Data Source=DESKTOP-I0HUN56\\MSSQLSERVER1;Initial Catalog=ThucTapNhom_QLBTS;Integrated Security=True");
+{ 
+    protected SqlConnection sqlConnection = new SqlConnection("Data Source=DINHDAN-PC;Initial Catalog=ThucTapNhom_QLBTS;Integrated Security=True");
 }
