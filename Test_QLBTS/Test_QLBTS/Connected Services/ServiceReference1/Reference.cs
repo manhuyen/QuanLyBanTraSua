@@ -100,10 +100,10 @@ namespace Test_QLBTS.ServiceReference1 {
         System.Threading.Tasks.Task<System.Data.DataTable> Xem_PhieunhapAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Them_Phieunhap", ReplyAction="http://tempuri.org/IMy_QLBTS/Them_PhieunhapResponse")]
-        bool Them_Phieunhap(string manhap, string manv, string ngaynhap);
+        bool Them_Phieunhap(string manhap, string manv, System.DateTime ngaynhap);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Them_Phieunhap", ReplyAction="http://tempuri.org/IMy_QLBTS/Them_PhieunhapResponse")]
-        System.Threading.Tasks.Task<bool> Them_PhieunhapAsync(string manhap, string manv, string ngaynhap);
+        System.Threading.Tasks.Task<bool> Them_PhieunhapAsync(string manhap, string manv, System.DateTime ngaynhap);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xoa_Phieunhap", ReplyAction="http://tempuri.org/IMy_QLBTS/Xoa_PhieunhapResponse")]
         bool Xoa_Phieunhap(string manhap);
@@ -112,10 +112,10 @@ namespace Test_QLBTS.ServiceReference1 {
         System.Threading.Tasks.Task<bool> Xoa_PhieunhapAsync(string manhap);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Sua_Phieunhap", ReplyAction="http://tempuri.org/IMy_QLBTS/Sua_PhieunhapResponse")]
-        bool Sua_Phieunhap(string manhap, string manv, string ngaynhap);
+        bool Sua_Phieunhap(string manhap, string manv, System.DateTime ngaynhap);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Sua_Phieunhap", ReplyAction="http://tempuri.org/IMy_QLBTS/Sua_PhieunhapResponse")]
-        System.Threading.Tasks.Task<bool> Sua_PhieunhapAsync(string manhap, string manv, string ngaynhap);
+        System.Threading.Tasks.Task<bool> Sua_PhieunhapAsync(string manhap, string manv, System.DateTime ngaynhap);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xem_Nguyenlieu", ReplyAction="http://tempuri.org/IMy_QLBTS/Xem_NguyenlieuResponse")]
         System.Data.DataTable Xem_Nguyenlieu();
@@ -347,11 +347,11 @@ namespace Test_QLBTS.ServiceReference1 {
             return base.Channel.Xem_PhieunhapAsync();
         }
         
-        public bool Them_Phieunhap(string manhap, string manv, string ngaynhap) {
+        public bool Them_Phieunhap(string manhap, string manv, System.DateTime ngaynhap) {
             return base.Channel.Them_Phieunhap(manhap, manv, ngaynhap);
         }
         
-        public System.Threading.Tasks.Task<bool> Them_PhieunhapAsync(string manhap, string manv, string ngaynhap) {
+        public System.Threading.Tasks.Task<bool> Them_PhieunhapAsync(string manhap, string manv, System.DateTime ngaynhap) {
             return base.Channel.Them_PhieunhapAsync(manhap, manv, ngaynhap);
         }
         
@@ -363,11 +363,11 @@ namespace Test_QLBTS.ServiceReference1 {
             return base.Channel.Xoa_PhieunhapAsync(manhap);
         }
         
-        public bool Sua_Phieunhap(string manhap, string manv, string ngaynhap) {
+        public bool Sua_Phieunhap(string manhap, string manv, System.DateTime ngaynhap) {
             return base.Channel.Sua_Phieunhap(manhap, manv, ngaynhap);
         }
         
-        public System.Threading.Tasks.Task<bool> Sua_PhieunhapAsync(string manhap, string manv, string ngaynhap) {
+        public System.Threading.Tasks.Task<bool> Sua_PhieunhapAsync(string manhap, string manv, System.DateTime ngaynhap) {
             return base.Channel.Sua_PhieunhapAsync(manhap, manv, ngaynhap);
         }
         

@@ -16,7 +16,7 @@ namespace DTO
         private string Manhap;
         private string MaNV, tennv, soDT;
         private int slnhap, sltrongkho;
-        private string ngaynhap;
+        private DateTime ngaynhap;
 
         public string _manl { get { return MaNL; } set { value = MaNL; } }
         public string _tennl { get { return tenNL; } set { value = tenNL; } }
@@ -27,6 +27,6 @@ namespace DTO
         public string _soDT { get { return soDT; } set { value = soDT; } }
         public int _slnhap { get { return slnhap; } set { value = slnhap; } }
         public int _sltrongkho { get { return sltrongkho; } set { value = sltrongkho; } }
-        public string _ngaynhap { get { return ngaynhap; } set { value = ngaynhap; } }
+        public DateTime _ngaynhap { get { return ngaynhap; } set { value = ngaynhap; } }
     }
 }

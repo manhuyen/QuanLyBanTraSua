@@ -29,7 +29,7 @@ namespace Test_QLBTS
         }
         void Clear1()
         {
-            
+
             txtMaNV.Clear();
             txttennvk.Clear();
             txtsdt.Clear();
@@ -68,10 +68,10 @@ namespace Test_QLBTS
                 MessageBox.Show("Thêm Thành Công!");
                 pn._manhap = txtMaPN.Text;
                 pn._manv = txtMaNV.Text;
-                pn._ngaynhap = txtngaynhap.Text;
+                pn._ngaynhap = Convert.ToDateTime(txtngaynhap.Text);
 
                 b.Them_Phieunhap(pn._manhap, pn._manv, pn._ngaynhap);
-                
+
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = b.Xem_Phieunhap();
                 Clear();
@@ -89,12 +89,12 @@ namespace Test_QLBTS
             {
 
                 MessageBox.Show("Thêm Thành Công!");
-                
+
                 pn._manv = txtMaNV.Text;
                 pn._tennv = txttennl.Text;
                 pn._soDT = txtsdt.Text;
 
-                b.Them_NhanvienKho( pn._manv, pn._tennv, pn._soDT);
+                b.Them_NhanvienKho(pn._manv, pn._tennv, pn._soDT);
 
                 dataGridView2.DataSource = null;
                 dataGridView2.DataSource = b.Xem_NhanvienKho();
@@ -131,9 +131,9 @@ namespace Test_QLBTS
             DialogResult dialogResult = MessageBox.Show("Bạn Có Muốn Xóa Phiếu Nhập  Này?", "Exit", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                
+
                 //int mapn = Convert.ToInt16(dataGridView1.CurrentRow.Cells["STT"].Value.ToString());
-                string mapn= dataGridView1.CurrentRow.Cells["STT"].Value.ToString();
+                string mapn = dataGridView1.CurrentRow.Cells["STT"].Value.ToString();
                 b.Xoa_Phieunhap(mapn);
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = b.Xem_Phieunhap();
@@ -182,30 +182,27 @@ namespace Test_QLBTS
 
         private void ToolStripButton2_Click(object sender, EventArgs e)
         {
-            txtMaPN.Text = dataGridView1.CurrentRow.Cells["Mã Phiếu Nhập"].Value.ToString();
+            txtMaPN.Text = dataGridView1.CurrentRow.Cells["STT"].Value.ToString();
             txtMaNV.Text = dataGridView1.CurrentRow.Cells["Mã Nhân Viên"].Value.ToString();
             txtngaynhap.Text = dataGridView1.CurrentRow.Cells["Ngày Nhập"].Value.ToString();
-            
+
         }
 
         private void ToolStripButton8_Click(object sender, EventArgs e)
         {
-            txtMaNV.Text = dataGridView2.CurrentRow.Cells["Mã Nhân Viên"].Value.ToString();
-            txttennvk.Text = dataGridView2.CurrentRow.Cells["Tên Nhân Viên"].Value.ToString();
-            txtsdt.Text = dataGridView2.CurrentRow.Cells["SĐT"].Value.ToString();
+            txtMaNV.Text = dataGridView2.CurrentRow.Cells["STT"].Value.ToString();
+            txttennvk.Text = dataGridView2.CurrentRow.Cells["Tên Nhân Viên Kho"].Value.ToString();
+            txtsdt.Text = dataGridView2.CurrentRow.Cells["Số Điện Thoại"].Value.ToString();
         }
 
         private void ToolStripButton4_Click(object sender, EventArgs e)
         {
-            txtmanl.Text = dataGridView3.CurrentRow.Cells["Mã Nguyên Liệu"].Value.ToString();
+            txtmanl.Text = dataGridView3.CurrentRow.Cells["STT"].Value.ToString();
             txttennl.Text = dataGridView3.CurrentRow.Cells["Tên Nguyên Liệu"].Value.ToString();
             txtdonvitinh.Text = dataGridView3.CurrentRow.Cells["Đơn Vị Tính"].Value.ToString();
         }
 
-        private void ToolStripButton3_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void PhieuNhap_Load_1(object sender, EventArgs e)
         {
@@ -216,6 +213,68 @@ namespace Test_QLBTS
             dataGridView3.DataSource = null;
             dataGridView3.DataSource = b.Xem_Nguyenlieu();
 
+        }
+        List<string> l = new List<string>();
+        private void ToolStripButton1_Click(object sender, EventArgs e)
+        {
+            if (txtMaPN.Text == "")
+            {
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Lưu thành công!");
+
+
+                pn._manhap = txtMaPN.Text;
+                pn._manv = txtMaNV.Text;
+                pn._ngaynhap = Convert.ToDateTime(txtngaynhap.Text);
+                b.Sua_Phieunhap(pn._manhap, pn._manv, pn._ngaynhap);
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = b.Xem_Phieunhap();
+                Clear();
+            }
+        }
+
+        private void ToolStripButton7_Click(object sender, EventArgs e)
+        {
+            if (txtMaNV.Text == "")
+            {
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Lưu thành công!");
+
+
+                pn._manv = txtMaNV.Text;
+                pn._tennv = txttennvk.Text;
+                pn._soDT = txtsdt.Text;
+                b.Sua_NhanvienKho(pn._manv, pn._tennl, pn._soDT);
+                dataGridView2.DataSource = null;
+                dataGridView2.DataSource = b.Xem_NhanvienKho();
+                Clear1();
+            }
+        }
+        private void ToolStripButton3_Click(object sender, EventArgs e)
+        {
+            if (txtmanl.Text == "")
+            {
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Lưu thành công!");
+
+
+                pn._manl = txtmanl.Text;
+                pn._tennl = txttennl.Text;
+                pn._donvitinh = txtdonvitinh.Text;
+                b.Sua_Nguyenlieu(pn._manl, pn._tennl, pn._donvitinh);
+                dataGridView3.DataSource = null;
+                dataGridView3.DataSource = b.Xem_Nguyenlieu();
+                Clear2();
+            }
         }
     }
 }

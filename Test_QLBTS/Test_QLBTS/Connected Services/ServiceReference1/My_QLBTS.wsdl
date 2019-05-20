@@ -269,7 +269,7 @@
           <xs:sequence>
             <xs:element minOccurs="0" name="manhap" nillable="true" type="xs:string" />
             <xs:element minOccurs="0" name="manv" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="ngaynhap" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="ngaynhap" type="xs:dateTime" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>
@@ -299,7 +299,7 @@
           <xs:sequence>
             <xs:element minOccurs="0" name="manhap" nillable="true" type="xs:string" />
             <xs:element minOccurs="0" name="manv" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="ngaynhap" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="ngaynhap" type="xs:dateTime" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>

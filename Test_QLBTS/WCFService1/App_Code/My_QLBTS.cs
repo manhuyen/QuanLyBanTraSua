@@ -66,7 +66,7 @@ public class My_QLBTS : IMy_QLBTS
         return t.Sua_NVK(manv, tennv, sdt);
     }
 
-    public bool Sua_Phieunhap(string manhap, string manv, string ngaynhap)
+    public bool Sua_Phieunhap(string manhap, string manv, DateTime ngaynhap)
     {
         return t.Sua_PN(manhap, manv, ngaynhap);
     }
@@ -94,7 +94,7 @@ public class My_QLBTS : IMy_QLBTS
         return t.Them_NVK(manv, tennv, sdt);
     }
 
-    public bool Them_Phieunhap(string manhap, string manv, string ngaynhap)
+    public bool Them_Phieunhap(string manhap, string manv, DateTime ngaynhap)
     {
         return t.Them_PN(manhap, manv, ngaynhap);
     }

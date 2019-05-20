@@ -39,11 +39,11 @@ public interface IMy_QLBTS
     [OperationContract]
     DataTable Xem_Phieunhap();
     [OperationContract]
-    bool Them_Phieunhap(string manhap, string manv, string ngaynhap);
+    bool Them_Phieunhap(string manhap, string manv, DateTime ngaynhap);
     [OperationContract]
     bool Xoa_Phieunhap(string manhap);
     [OperationContract]
-    bool Sua_Phieunhap(string manhap, string manv, string ngaynhap);
+    bool Sua_Phieunhap(string manhap, string manv, DateTime ngaynhap);
     [OperationContract]
     DataTable Xem_Nguyenlieu();
     [OperationContract]

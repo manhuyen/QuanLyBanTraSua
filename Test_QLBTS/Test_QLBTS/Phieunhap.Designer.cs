@@ -212,7 +212,7 @@
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(1136, 584);
+            this.tabPage4.Size = new System.Drawing.Size(1136, 565);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Nguyên Liệu";
             // 
@@ -224,7 +224,7 @@
             this.toolStripButton3});
             this.toolStrip3.Location = new System.Drawing.Point(250, 241);
             this.toolStrip3.Name = "toolStrip3";
-            this.toolStrip3.Size = new System.Drawing.Size(36, 27);
+            this.toolStrip3.Size = new System.Drawing.Size(75, 27);
             this.toolStrip3.TabIndex = 126;
             this.toolStrip3.Text = "toolStrip3";
             // 
@@ -487,6 +487,7 @@
             this.toolStripButton7.Name = "toolStripButton7";
             this.toolStripButton7.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton7.Text = "toolStripButton3";
+            this.toolStripButton7.Click += new System.EventHandler(this.ToolStripButton7_Click);
             // 
             // panel1
             // 
@@ -577,6 +578,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton1.Text = "toolStripButton3";
+            this.toolStripButton1.Click += new System.EventHandler(this.ToolStripButton1_Click);
             // 
             // label7
             // 
@@ -782,7 +784,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1136, 584);
+            this.tabPage2.Size = new System.Drawing.Size(1136, 565);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Nhân Viên Kho";
             // 

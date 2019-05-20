@@ -88,7 +88,7 @@ public class TruyVan:DB_Connection
         Load_DB(query);
         return true;
     }
-    public bool Them_PN(string manhap, string manv, string ngaynhap)
+    public bool Them_PN(string manhap, string manv, DateTime ngaynhap)
     {
         string query = "Insert into Phieunhap(Manhap,MaNV,ngaynhap) values(N'" + manhap + "',N" + manv + ",N'" + ngaynhap + "')";
         Load_DB(query);
@@ -100,7 +100,7 @@ public class TruyVan:DB_Connection
         Load_DB(query);
         return true;
     }
-    public bool Sua_PN(string manhap, string manv, string ngaynhap)
+    public bool Sua_PN(string manhap, string manv, DateTime ngaynhap)
     {
         string query = "update Phieunhap set Manhap=N'" + manhap + "',MaNV=N'" + manv + "',ngaynhap=N'" + ngaynhap + "'";
         Load_DB(query);
