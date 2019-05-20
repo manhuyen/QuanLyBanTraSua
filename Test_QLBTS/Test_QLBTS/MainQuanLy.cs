@@ -54,5 +54,12 @@ namespace Test_QLBTS
         {
 
         }
+
+        private void BtnPhieunhap_Click(object sender, EventArgs e)
+        {
+            panel4.Controls.Clear();
+            PhieuNhap m = new PhieuNhap();
+            panel4.Controls.Add(m);
+        }
     }
 }

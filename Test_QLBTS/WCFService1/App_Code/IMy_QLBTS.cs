@@ -37,6 +37,30 @@ public interface IMy_QLBTS
     [OperationContract]
     bool Sua_Topping(string matp, string tentp,  double gia, string image);
     [OperationContract]
+    DataTable Xem_Phieunhap();
+    [OperationContract]
+    bool Them_Phieunhap(string manhap, string manv, string ngaynhap);
+    [OperationContract]
+    bool Xoa_Phieunhap(string manhap);
+    [OperationContract]
+    bool Sua_Phieunhap(string manhap, string manv, string ngaynhap);
+    [OperationContract]
+    DataTable Xem_Nguyenlieu();
+    [OperationContract]
+    bool Them_Nguyenlieu(string manl, string tennl, string dvt);
+    [OperationContract]
+    bool Xoa_Nguyenlieu(string manl);
+    [OperationContract]
+    bool Sua_Nguyenlieu(string manl, string tennl, string dvt);
+    [OperationContract]
+    DataTable Xem_NhanvienKho();
+    [OperationContract]
+    bool Them_NhanvienKho(string manv, string tennv, string sdt);
+    [OperationContract]
+    bool Xoa_NhanvienKho(string manv);
+    [OperationContract]
+    bool Sua_NhanvienKho(string manv, string tennv, string sdt);
+    [OperationContract]
     int GetID(string taikhoan,string matkhau);
     [OperationContract]
     string GetName(string taikhoan, string matkhau);

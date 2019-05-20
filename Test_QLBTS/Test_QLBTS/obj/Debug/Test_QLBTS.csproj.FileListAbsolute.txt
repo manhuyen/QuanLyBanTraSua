@@ -81,3 +81,4 @@ C:\Users\ADMIN\Desktop\git\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_
 C:\Users\ADMIN\Desktop\git\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.csproj.CopyComplete
 C:\Users\ADMIN\Desktop\git\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.exe
 C:\Users\ADMIN\Desktop\git\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.pdb
+C:\Users\ADMIN\Desktop\git\QuanLyBanTraSua\Test_QLBTS\Test_QLBTS\obj\Debug\Test_QLBTS.Phieunhap.resources

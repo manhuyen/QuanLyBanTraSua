@@ -93,6 +93,78 @@ namespace Test_QLBTS.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Sua_Topping", ReplyAction="http://tempuri.org/IMy_QLBTS/Sua_ToppingResponse")]
         System.Threading.Tasks.Task<bool> Sua_ToppingAsync(string matp, string tentp, double gia, string image);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xem_Phieunhap", ReplyAction="http://tempuri.org/IMy_QLBTS/Xem_PhieunhapResponse")]
+        System.Data.DataTable Xem_Phieunhap();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xem_Phieunhap", ReplyAction="http://tempuri.org/IMy_QLBTS/Xem_PhieunhapResponse")]
+        System.Threading.Tasks.Task<System.Data.DataTable> Xem_PhieunhapAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Them_Phieunhap", ReplyAction="http://tempuri.org/IMy_QLBTS/Them_PhieunhapResponse")]
+        bool Them_Phieunhap(string manhap, string manv, string ngaynhap);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Them_Phieunhap", ReplyAction="http://tempuri.org/IMy_QLBTS/Them_PhieunhapResponse")]
+        System.Threading.Tasks.Task<bool> Them_PhieunhapAsync(string manhap, string manv, string ngaynhap);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xoa_Phieunhap", ReplyAction="http://tempuri.org/IMy_QLBTS/Xoa_PhieunhapResponse")]
+        bool Xoa_Phieunhap(string manhap);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xoa_Phieunhap", ReplyAction="http://tempuri.org/IMy_QLBTS/Xoa_PhieunhapResponse")]
+        System.Threading.Tasks.Task<bool> Xoa_PhieunhapAsync(string manhap);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Sua_Phieunhap", ReplyAction="http://tempuri.org/IMy_QLBTS/Sua_PhieunhapResponse")]
+        bool Sua_Phieunhap(string manhap, string manv, string ngaynhap);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Sua_Phieunhap", ReplyAction="http://tempuri.org/IMy_QLBTS/Sua_PhieunhapResponse")]
+        System.Threading.Tasks.Task<bool> Sua_PhieunhapAsync(string manhap, string manv, string ngaynhap);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xem_Nguyenlieu", ReplyAction="http://tempuri.org/IMy_QLBTS/Xem_NguyenlieuResponse")]
+        System.Data.DataTable Xem_Nguyenlieu();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xem_Nguyenlieu", ReplyAction="http://tempuri.org/IMy_QLBTS/Xem_NguyenlieuResponse")]
+        System.Threading.Tasks.Task<System.Data.DataTable> Xem_NguyenlieuAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Them_Nguyenlieu", ReplyAction="http://tempuri.org/IMy_QLBTS/Them_NguyenlieuResponse")]
+        bool Them_Nguyenlieu(string manl, string tennl, string dvt);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Them_Nguyenlieu", ReplyAction="http://tempuri.org/IMy_QLBTS/Them_NguyenlieuResponse")]
+        System.Threading.Tasks.Task<bool> Them_NguyenlieuAsync(string manl, string tennl, string dvt);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xoa_Nguyenlieu", ReplyAction="http://tempuri.org/IMy_QLBTS/Xoa_NguyenlieuResponse")]
+        bool Xoa_Nguyenlieu(string manl);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xoa_Nguyenlieu", ReplyAction="http://tempuri.org/IMy_QLBTS/Xoa_NguyenlieuResponse")]
+        System.Threading.Tasks.Task<bool> Xoa_NguyenlieuAsync(string manl);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Sua_Nguyenlieu", ReplyAction="http://tempuri.org/IMy_QLBTS/Sua_NguyenlieuResponse")]
+        bool Sua_Nguyenlieu(string manl, string tennl, string dvt);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Sua_Nguyenlieu", ReplyAction="http://tempuri.org/IMy_QLBTS/Sua_NguyenlieuResponse")]
+        System.Threading.Tasks.Task<bool> Sua_NguyenlieuAsync(string manl, string tennl, string dvt);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xem_NhanvienKho", ReplyAction="http://tempuri.org/IMy_QLBTS/Xem_NhanvienKhoResponse")]
+        System.Data.DataTable Xem_NhanvienKho();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xem_NhanvienKho", ReplyAction="http://tempuri.org/IMy_QLBTS/Xem_NhanvienKhoResponse")]
+        System.Threading.Tasks.Task<System.Data.DataTable> Xem_NhanvienKhoAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Them_NhanvienKho", ReplyAction="http://tempuri.org/IMy_QLBTS/Them_NhanvienKhoResponse")]
+        bool Them_NhanvienKho(string manv, string tennv, string sdt);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Them_NhanvienKho", ReplyAction="http://tempuri.org/IMy_QLBTS/Them_NhanvienKhoResponse")]
+        System.Threading.Tasks.Task<bool> Them_NhanvienKhoAsync(string manv, string tennv, string sdt);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xoa_NhanvienKho", ReplyAction="http://tempuri.org/IMy_QLBTS/Xoa_NhanvienKhoResponse")]
+        bool Xoa_NhanvienKho(string manv);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xoa_NhanvienKho", ReplyAction="http://tempuri.org/IMy_QLBTS/Xoa_NhanvienKhoResponse")]
+        System.Threading.Tasks.Task<bool> Xoa_NhanvienKhoAsync(string manv);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Sua_NhanvienKho", ReplyAction="http://tempuri.org/IMy_QLBTS/Sua_NhanvienKhoResponse")]
+        bool Sua_NhanvienKho(string manv, string tennv, string sdt);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Sua_NhanvienKho", ReplyAction="http://tempuri.org/IMy_QLBTS/Sua_NhanvienKhoResponse")]
+        System.Threading.Tasks.Task<bool> Sua_NhanvienKhoAsync(string manv, string tennv, string sdt);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/GetID", ReplyAction="http://tempuri.org/IMy_QLBTS/GetIDResponse")]
         int GetID(string taikhoan, string matkhau);
         
@@ -265,6 +337,102 @@ namespace Test_QLBTS.ServiceReference1 {
         
         public System.Threading.Tasks.Task<bool> Sua_ToppingAsync(string matp, string tentp, double gia, string image) {
             return base.Channel.Sua_ToppingAsync(matp, tentp, gia, image);
+        }
+        
+        public System.Data.DataTable Xem_Phieunhap() {
+            return base.Channel.Xem_Phieunhap();
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataTable> Xem_PhieunhapAsync() {
+            return base.Channel.Xem_PhieunhapAsync();
+        }
+        
+        public bool Them_Phieunhap(string manhap, string manv, string ngaynhap) {
+            return base.Channel.Them_Phieunhap(manhap, manv, ngaynhap);
+        }
+        
+        public System.Threading.Tasks.Task<bool> Them_PhieunhapAsync(string manhap, string manv, string ngaynhap) {
+            return base.Channel.Them_PhieunhapAsync(manhap, manv, ngaynhap);
+        }
+        
+        public bool Xoa_Phieunhap(string manhap) {
+            return base.Channel.Xoa_Phieunhap(manhap);
+        }
+        
+        public System.Threading.Tasks.Task<bool> Xoa_PhieunhapAsync(string manhap) {
+            return base.Channel.Xoa_PhieunhapAsync(manhap);
+        }
+        
+        public bool Sua_Phieunhap(string manhap, string manv, string ngaynhap) {
+            return base.Channel.Sua_Phieunhap(manhap, manv, ngaynhap);
+        }
+        
+        public System.Threading.Tasks.Task<bool> Sua_PhieunhapAsync(string manhap, string manv, string ngaynhap) {
+            return base.Channel.Sua_PhieunhapAsync(manhap, manv, ngaynhap);
+        }
+        
+        public System.Data.DataTable Xem_Nguyenlieu() {
+            return base.Channel.Xem_Nguyenlieu();
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataTable> Xem_NguyenlieuAsync() {
+            return base.Channel.Xem_NguyenlieuAsync();
+        }
+        
+        public bool Them_Nguyenlieu(string manl, string tennl, string dvt) {
+            return base.Channel.Them_Nguyenlieu(manl, tennl, dvt);
+        }
+        
+        public System.Threading.Tasks.Task<bool> Them_NguyenlieuAsync(string manl, string tennl, string dvt) {
+            return base.Channel.Them_NguyenlieuAsync(manl, tennl, dvt);
+        }
+        
+        public bool Xoa_Nguyenlieu(string manl) {
+            return base.Channel.Xoa_Nguyenlieu(manl);
+        }
+        
+        public System.Threading.Tasks.Task<bool> Xoa_NguyenlieuAsync(string manl) {
+            return base.Channel.Xoa_NguyenlieuAsync(manl);
+        }
+        
+        public bool Sua_Nguyenlieu(string manl, string tennl, string dvt) {
+            return base.Channel.Sua_Nguyenlieu(manl, tennl, dvt);
+        }
+        
+        public System.Threading.Tasks.Task<bool> Sua_NguyenlieuAsync(string manl, string tennl, string dvt) {
+            return base.Channel.Sua_NguyenlieuAsync(manl, tennl, dvt);
+        }
+        
+        public System.Data.DataTable Xem_NhanvienKho() {
+            return base.Channel.Xem_NhanvienKho();
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataTable> Xem_NhanvienKhoAsync() {
+            return base.Channel.Xem_NhanvienKhoAsync();
+        }
+        
+        public bool Them_NhanvienKho(string manv, string tennv, string sdt) {
+            return base.Channel.Them_NhanvienKho(manv, tennv, sdt);
+        }
+        
+        public System.Threading.Tasks.Task<bool> Them_NhanvienKhoAsync(string manv, string tennv, string sdt) {
+            return base.Channel.Them_NhanvienKhoAsync(manv, tennv, sdt);
+        }
+        
+        public bool Xoa_NhanvienKho(string manv) {
+            return base.Channel.Xoa_NhanvienKho(manv);
+        }
+        
+        public System.Threading.Tasks.Task<bool> Xoa_NhanvienKhoAsync(string manv) {
+            return base.Channel.Xoa_NhanvienKhoAsync(manv);
+        }
+        
+        public bool Sua_NhanvienKho(string manv, string tennv, string sdt) {
+            return base.Channel.Sua_NhanvienKho(manv, tennv, sdt);
+        }
+        
+        public System.Threading.Tasks.Task<bool> Sua_NhanvienKhoAsync(string manv, string tennv, string sdt) {
+            return base.Channel.Sua_NhanvienKhoAsync(manv, tennv, sdt);
         }
         
         public int GetID(string taikhoan, string matkhau) {

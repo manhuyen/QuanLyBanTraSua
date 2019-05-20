@@ -240,6 +240,216 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element name="Xem_Phieunhap">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xem_PhieunhapResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Xem_PhieunhapResult" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Them_Phieunhap">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="manhap" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="manv" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="ngaynhap" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Them_PhieunhapResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Them_PhieunhapResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xoa_Phieunhap">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="manhap" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xoa_PhieunhapResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Xoa_PhieunhapResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Sua_Phieunhap">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="manhap" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="manv" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="ngaynhap" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Sua_PhieunhapResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Sua_PhieunhapResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xem_Nguyenlieu">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xem_NguyenlieuResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Xem_NguyenlieuResult" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Them_Nguyenlieu">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="manl" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="tennl" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="dvt" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Them_NguyenlieuResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Them_NguyenlieuResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xoa_Nguyenlieu">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="manl" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xoa_NguyenlieuResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Xoa_NguyenlieuResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Sua_Nguyenlieu">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="manl" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="tennl" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="dvt" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Sua_NguyenlieuResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Sua_NguyenlieuResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xem_NhanvienKho">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xem_NhanvienKhoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Xem_NhanvienKhoResult" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Them_NhanvienKho">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="manv" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="tennv" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="sdt" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Them_NhanvienKhoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Them_NhanvienKhoResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xoa_NhanvienKho">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="manv" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Xoa_NhanvienKhoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Xoa_NhanvienKhoResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Sua_NhanvienKho">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="manv" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="tennv" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="sdt" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Sua_NhanvienKhoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Sua_NhanvienKhoResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
       <xs:element name="GetID">
         <xs:complexType>
           <xs:sequence>
@@ -490,6 +700,78 @@
   <wsdl:message name="IMy_QLBTS_Sua_Topping_OutputMessage">
     <wsdl:part name="parameters" element="tns:Sua_ToppingResponse" />
   </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_Phieunhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_Phieunhap" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_Phieunhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_PhieunhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Them_Phieunhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:Them_Phieunhap" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Them_Phieunhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Them_PhieunhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xoa_Phieunhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa_Phieunhap" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xoa_Phieunhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa_PhieunhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Sua_Phieunhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_Phieunhap" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Sua_Phieunhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_PhieunhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_Nguyenlieu_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_Nguyenlieu" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_Nguyenlieu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_NguyenlieuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Them_Nguyenlieu_InputMessage">
+    <wsdl:part name="parameters" element="tns:Them_Nguyenlieu" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Them_Nguyenlieu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Them_NguyenlieuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xoa_Nguyenlieu_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa_Nguyenlieu" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xoa_Nguyenlieu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa_NguyenlieuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Sua_Nguyenlieu_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_Nguyenlieu" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Sua_Nguyenlieu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_NguyenlieuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_NhanvienKho_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_NhanvienKho" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xem_NhanvienKho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Xem_NhanvienKhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Them_NhanvienKho_InputMessage">
+    <wsdl:part name="parameters" element="tns:Them_NhanvienKho" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Them_NhanvienKho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Them_NhanvienKhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xoa_NhanvienKho_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa_NhanvienKho" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Xoa_NhanvienKho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa_NhanvienKhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Sua_NhanvienKho_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_NhanvienKho" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Sua_NhanvienKho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sua_NhanvienKhoResponse" />
+  </wsdl:message>
   <wsdl:message name="IMy_QLBTS_GetID_InputMessage">
     <wsdl:part name="parameters" element="tns:GetID" />
   </wsdl:message>
@@ -584,6 +866,54 @@
     <wsdl:operation name="Sua_Topping">
       <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_Topping" message="tns:IMy_QLBTS_Sua_Topping_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_ToppingResponse" message="tns:IMy_QLBTS_Sua_Topping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xem_Phieunhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_Phieunhap" message="tns:IMy_QLBTS_Xem_Phieunhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_PhieunhapResponse" message="tns:IMy_QLBTS_Xem_Phieunhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Them_Phieunhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Them_Phieunhap" message="tns:IMy_QLBTS_Them_Phieunhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Them_PhieunhapResponse" message="tns:IMy_QLBTS_Them_Phieunhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xoa_Phieunhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xoa_Phieunhap" message="tns:IMy_QLBTS_Xoa_Phieunhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xoa_PhieunhapResponse" message="tns:IMy_QLBTS_Xoa_Phieunhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sua_Phieunhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_Phieunhap" message="tns:IMy_QLBTS_Sua_Phieunhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_PhieunhapResponse" message="tns:IMy_QLBTS_Sua_Phieunhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xem_Nguyenlieu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_Nguyenlieu" message="tns:IMy_QLBTS_Xem_Nguyenlieu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_NguyenlieuResponse" message="tns:IMy_QLBTS_Xem_Nguyenlieu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Them_Nguyenlieu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Them_Nguyenlieu" message="tns:IMy_QLBTS_Them_Nguyenlieu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Them_NguyenlieuResponse" message="tns:IMy_QLBTS_Them_Nguyenlieu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xoa_Nguyenlieu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xoa_Nguyenlieu" message="tns:IMy_QLBTS_Xoa_Nguyenlieu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xoa_NguyenlieuResponse" message="tns:IMy_QLBTS_Xoa_Nguyenlieu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sua_Nguyenlieu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_Nguyenlieu" message="tns:IMy_QLBTS_Sua_Nguyenlieu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_NguyenlieuResponse" message="tns:IMy_QLBTS_Sua_Nguyenlieu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xem_NhanvienKho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_NhanvienKho" message="tns:IMy_QLBTS_Xem_NhanvienKho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_NhanvienKhoResponse" message="tns:IMy_QLBTS_Xem_NhanvienKho_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Them_NhanvienKho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Them_NhanvienKho" message="tns:IMy_QLBTS_Them_NhanvienKho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Them_NhanvienKhoResponse" message="tns:IMy_QLBTS_Them_NhanvienKho_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xoa_NhanvienKho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xoa_NhanvienKho" message="tns:IMy_QLBTS_Xoa_NhanvienKho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xoa_NhanvienKhoResponse" message="tns:IMy_QLBTS_Xoa_NhanvienKho_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sua_NhanvienKho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_NhanvienKho" message="tns:IMy_QLBTS_Sua_NhanvienKho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Sua_NhanvienKhoResponse" message="tns:IMy_QLBTS_Sua_NhanvienKho_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetID">
       <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/GetID" message="tns:IMy_QLBTS_GetID_InputMessage" />
@@ -726,6 +1056,114 @@
     </wsdl:operation>
     <wsdl:operation name="Sua_Topping">
       <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Sua_Topping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xem_Phieunhap">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xem_Phieunhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Them_Phieunhap">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Them_Phieunhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xoa_Phieunhap">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xoa_Phieunhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sua_Phieunhap">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Sua_Phieunhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xem_Nguyenlieu">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xem_Nguyenlieu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Them_Nguyenlieu">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Them_Nguyenlieu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xoa_Nguyenlieu">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xoa_Nguyenlieu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sua_Nguyenlieu">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Sua_Nguyenlieu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xem_NhanvienKho">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xem_NhanvienKho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Them_NhanvienKho">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Them_NhanvienKho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xoa_NhanvienKho">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xoa_NhanvienKho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sua_NhanvienKho">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Sua_NhanvienKho" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

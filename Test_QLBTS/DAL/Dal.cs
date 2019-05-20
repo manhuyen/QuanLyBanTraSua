@@ -77,6 +77,60 @@ namespace DAL
             Load_DB(query);
             return true;
         }
+        public bool Them_PN(Phieunhap pn)
+        {
+            string query = $"Insert into Phieunhap(Manhap, MaNV,ngaynhap) values(N'{pn._manhap}',N'{pn._manv}',N'{pn._ngaynhap}')";
+            Load_DB(query);
+            return true;
+        }
+        public bool Xoa_PN(string manhap)
+        {
+            string query = $"update Dongphieunhap set Manhap=null where Manhap=N'{manhap}' delete Phieunhap where Manhap=N'{manhap}'";
+            Load_DB(query);
+            return true;
+        }
+        public bool Sua_PN(Phieunhap pn)
+        {
+            string query = $"update Phieunhap set Manhap=N'{pn._manhap}', MaNV=N'{pn._manv}',ngaynhap=N'{pn._ngaynhap}' Where Manhap=N'{pn._manhap}' ";
+            Load_DB(query);
+            return true;
+        }
+        public bool Them_NL(Phieunhap pn)
+        {
+            string query = $"Insert into Nguyenlieu(MaNL, tenNL,donvitinh) values(N'{pn._manl}',N'{pn._tennl}',N'{pn._donvitinh}')";
+            Load_DB(query);
+            return true;
+        }
+        public bool Xoa_NL(string manl)
+        {
+            string query = $"update Dongphieunhap set MaNL=null where MaNL=N'{manl}' delete Nguyenlieu where MaNL=N'{manl}'";
+            Load_DB(query);
+            return true;
+        }
+        public bool Sua_NL(Phieunhap pn)
+        {
+            string query = $"update Nguyenlieu set MaNL=N'{pn._manl}', tenNL=N'{pn._tennl}',donvitinh=N'{pn._donvitinh}' Where MaNL=N'{pn._manl}' ";
+            Load_DB(query);
+            return true;
+        }
+        public bool Them_NVK(Phieunhap pn)
+        {
+            string query = $"Insert into Nhanvien(MaNV, tennv,soDT) values(N'{pn._manv}',N'{pn._tennv}',N'{pn._soDT}')";
+            Load_DB(query);
+            return true;
+        }
+        public bool Xoa_NVK(string manv)
+        {
+            string query = $"update Phieunhap set MaNV=null where MaNV=N'{manv}' delete Nhanvien where MaNV=N'{manv}'";
+            Load_DB(query);
+            return true;
+        }
+        public bool Sua_NVK(Phieunhap pn)
+        {
+            string query = $"update Nhanvien set MaNV=N'{pn._manv}', tennv=N'{pn._tennv}',soDT=N'{pn._soDT}' Where MaNV=N'{pn._manv}' ";
+            Load_DB(query);
+            return true;
+        }
         public int GetID(string ten,string matkhau)
         {
             string query=($"Select * from Login_QLBTS where user_ten='{ten}' and user_pass='{matkhau}'");

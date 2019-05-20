@@ -88,6 +88,60 @@ public class TruyVan:DB_Connection
         Load_DB(query);
         return true;
     }
+    public bool Them_PN(string manhap, string manv, string ngaynhap)
+    {
+        string query = "Insert into Phieunhap(Manhap,MaNV,ngaynhap) values(N'" + manhap + "',N" + manv + ",N'" + ngaynhap + "')";
+        Load_DB(query);
+        return true;
+    }
+    public bool Xoa_PN(string manhap)
+    {
+        string query = "update Dongphieunhap set Manhap=null where Manhap=N'" + manhap + "' delete Phieunhap where Manhap=N'" + manhap + "'";
+        Load_DB(query);
+        return true;
+    }
+    public bool Sua_PN(string manhap, string manv, string ngaynhap)
+    {
+        string query = "update Phieunhap set Manhap=N'" + manhap + "',MaNV=N'" + manv + "',ngaynhap=N'" + ngaynhap + "'";
+        Load_DB(query);
+        return true;
+    }
+    public bool Them_NL(string manl, string tennl, string dvt)
+    {
+        string query = "Insert into Nguyenlieu(MaNL,tenNL,donvitinh) values(N'" + manl + "',N" + tennl + ",N'" + dvt + "')";
+        Load_DB(query);
+        return true;
+    }
+    public bool Xoa_NL(string manl)
+    {
+        string query = "update Dongphieunhap set MaNL=null where MaNL=N'" + manl + "' delete Nguyenlieu where MaNL=N'" + manl + "'";
+        Load_DB(query);
+        return true;
+    }
+    public bool Sua_NL(string manl, string tennl, string dvt)
+    {
+        string query = "update Nguyenlieu set MaNL=N'" + manl + "',tenNL=N'" + tennl + "',donvitinh=N'" + dvt + "'";
+        Load_DB(query);
+        return true;
+    }
+    public bool Them_NVK(string manv, string tennv, string sdt)
+    {
+        string query = "Insert into Nhanvien(MaNV,tennv,soDT) values(N'" + manv + "',N" + tennv + ",N'" + sdt + "')";
+        Load_DB(query);
+        return true;
+    }
+    public bool Xoa_NVK(string manv)
+    {
+        string query = "update Phieunhap set MaNV=null where MaNV=N'" + manv + "' delete Nhanvien where MaNV=N'" + manv + "'";
+        Load_DB(query);
+        return true;
+    }
+    public bool Sua_NVK(string manv, string tennv, string sdt)
+    {
+        string query = "update Nhanvien set MaNV=N'" + manv + "',tennv=N'" + tennv + "',soDT=N'" + sdt + "'";
+        Load_DB(query);
+        return true;
+    }
     public int GetID(string ten, string matkhau)
     {
         string query = "Select * from Login_QLBTS where user_ten='"+ten+"' and user_pass='"+matkhau+"'";

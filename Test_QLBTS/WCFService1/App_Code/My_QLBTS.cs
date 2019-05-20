@@ -56,7 +56,20 @@ public class My_QLBTS : IMy_QLBTS
     {
         return t.Sua_Topping(matp, tentp, gia, image);
     }
+    public bool Sua_Nguyenlieu(string manl, string tennl, string dvt)
+    {
+        return t.Sua_NL(manl, tennl, dvt);
+    }
 
+    public bool Sua_NhanvienKho(string manv, string tennv, string sdt)
+    {
+        return t.Sua_NVK(manv, tennv, sdt);
+    }
+
+    public bool Sua_Phieunhap(string manhap, string manv, string ngaynhap)
+    {
+        return t.Sua_PN(manhap, manv, ngaynhap);
+    }
     public bool Them_DoUong(string tendu, string size,  double dongia, int maloai, string image)
     {
         return t.Them_DoUong( tendu, size, dongia, maloai, image);
@@ -71,6 +84,21 @@ public class My_QLBTS : IMy_QLBTS
     {
         return t.Them_Topping(matp, tentp, gia, image);
     }
+    public bool Them_Nguyenlieu(string manl, string tennl, string dvt)
+    {
+        return t.Them_NL(manl, tennl, dvt);
+    }
+
+    public bool Them_NhanvienKho(string manv, string tennv, string sdt)
+    {
+        return t.Them_NVK(manv, tennv, sdt);
+    }
+
+    public bool Them_Phieunhap(string manhap, string manv, string ngaynhap)
+    {
+        return t.Them_PN(manhap, manv, ngaynhap);
+    }
+
 
     public bool Update_LoaiTV()
     {
@@ -96,6 +124,23 @@ public class My_QLBTS : IMy_QLBTS
          string query = "select * from Topping";
         return t.Load_DB(query);
     }
+    public DataTable Xem_Nguyenlieu()
+    {
+        string query = "select MaNL as STT, tenNL as N'Tên Nguyên Liệu', donvitinh as N'Đơn Vị Tính' from Nguyenlieu ";
+        return t.Load_DB(query);
+    }
+
+    public DataTable Xem_NhanvienKho()
+    {
+        string query = "select MaNV as STT, tennv as N'Tên Nhân Viên Kho', soDT as N'Số Điện Thoại' from Nhanvien ";
+        return t.Load_DB(query);
+    }
+
+    public DataTable Xem_Phieunhap()
+    {
+        string query = "select Manhap as STT, MaNV as N'Mã Nhân Viên', ngaynhap as N'Ngày Nhập' from Phieunhap ";
+        return t.Load_DB(query);
+    }
 
     public DataTable Xem_TuyTron(string query)
     {
@@ -116,4 +161,19 @@ public class My_QLBTS : IMy_QLBTS
     {
         return t.Xoa_Topping(matp);
     }
+    public bool Xoa_Nguyenlieu(string manl)
+    {
+        return t.Xoa_NL(manl);
+    }
+
+    public bool Xoa_NhanvienKho(string manv)
+    {
+        return t.Xoa_NVK(manv);
+    }
+
+    public bool Xoa_Phieunhap(string manhap)
+    {
+        return t.Xoa_PN(manhap);
+    }
+
 }

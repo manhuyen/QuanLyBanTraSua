@@ -64,6 +64,57 @@ namespace BUS
         {
             return dal.Sua_Topping(m);
         }
+        public DataTable Xem_Phieunhap()
+        {
+            string query = "Select * from Phieunhap";
+            return dal.Load_DB(query);
+        }
+        public bool Them_PN(Phieunhap pn)
+        {
+            return dal.Them_PN(pn);
+        }
+        public bool Xoa_PN(string MaPN)
+        {
+            return dal.Xoa_PN(MaPN);
+        }
+        public bool Sua_PN(Phieunhap pn)
+        {
+            return dal.Sua_PN(pn);
+        }
+        public DataTable XemNguyenlieu()
+        {
+            string query = "Select * from Nguyenlieu";
+            return dal.Load_DB(query);
+        }
+        public bool Them_NL(Phieunhap nl)
+        {
+            return dal.Them_NL(nl);
+        }
+        public bool Xoa_NL(string MaNl)
+        {
+            return dal.Xoa_NL(MaNl);
+        }
+        public bool Sua_NL(Phieunhap pn)
+        {
+            return dal.Sua_NL(pn);
+        }
+        public DataTable Xem_NVK()
+        {
+            string query = "Select * from Nhanvien";
+            return dal.Load_DB(query);
+        }
+        public bool Them_NVK(Phieunhap pn)
+        {
+            return dal.Them_NVK(pn);
+        }
+        public bool Xoa_NVK(string MaPN)
+        {
+            return dal.Xoa_NVK(MaPN);
+        }
+        public bool Sua_NVK(Phieunhap pn)
+        {
+            return dal.Sua_NVK(pn);
+        }
         public int GetID(string taikhoan,string matkhau)
         {
             return dal.GetID(taikhoan, matkhau);

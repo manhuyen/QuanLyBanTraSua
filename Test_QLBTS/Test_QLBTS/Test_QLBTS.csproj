@@ -101,6 +101,12 @@
     <Compile Include="Order_ThanhToan.Designer.cs">
       <DependentUpon>Order_ThanhToan.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhieuNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PhieuNhap.Designer.cs">
+      <DependentUpon>PhieuNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Order_ThanhToan.resx">
       <DependentUpon>Order_ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuNhap.resx">
+      <DependentUpon>PhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

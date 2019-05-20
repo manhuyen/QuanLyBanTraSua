@@ -29,33 +29,30 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnPhieunhap = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.bttinhtien = new System.Windows.Forms.Button();
             this.btdiscount = new System.Windows.Forms.Button();
             this.btthanhvien = new System.Windows.Forms.Button();
             this.btmenu = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,14 +68,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1243, 104);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.tabControl1);
-            this.panel2.Location = new System.Drawing.Point(13, 123);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1252, 650);
-            this.panel2.TabIndex = 1;
             // 
             // label4
             // 
@@ -133,6 +122,14 @@
             this.label1.Text = "Hệ Thống Quản Lý Cửa Hàng";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.tabControl1);
+            this.panel2.Location = new System.Drawing.Point(13, 123);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1252, 650);
+            this.panel2.TabIndex = 1;
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -156,6 +153,35 @@
             this.tabPage1.Text = "Kho";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Gray;
+            this.panel4.Location = new System.Drawing.Point(260, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1161, 743);
+            this.panel4.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Silver;
+            this.panel3.Controls.Add(this.btnPhieunhap);
+            this.panel3.Location = new System.Drawing.Point(7, 7);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(247, 596);
+            this.panel3.TabIndex = 0;
+            // 
+            // btnPhieunhap
+            // 
+            this.btnPhieunhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhieunhap.Location = new System.Drawing.Point(-34, 16);
+            this.btnPhieunhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPhieunhap.Name = "btnPhieunhap";
+            this.btnPhieunhap.Size = new System.Drawing.Size(291, 32);
+            this.btnPhieunhap.TabIndex = 11;
+            this.btnPhieunhap.Text = ">>KHO<<";
+            this.btnPhieunhap.UseVisualStyleBackColor = true;
+            this.btnPhieunhap.Click += new System.EventHandler(this.BtnPhieunhap_Click);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.panel6);
@@ -169,25 +195,13 @@
             this.tabPage2.Text = "Doanh Thu";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // panel6
             // 
-            this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Location = new System.Drawing.Point(7, 7);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(291, 596);
-            this.panel3.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Gray;
-            this.panel4.Location = new System.Drawing.Point(304, 7);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(927, 596);
-            this.panel4.TabIndex = 1;
+            this.panel6.BackColor = System.Drawing.Color.Gray;
+            this.panel6.Location = new System.Drawing.Point(304, 7);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(927, 593);
+            this.panel6.TabIndex = 1;
             // 
             // panel5
             // 
@@ -200,14 +214,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(291, 593);
             this.panel5.TabIndex = 0;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Gray;
-            this.panel6.Location = new System.Drawing.Point(304, 7);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(927, 593);
-            this.panel6.TabIndex = 1;
             // 
             // bttinhtien
             // 
@@ -249,46 +255,6 @@
             this.btmenu.Text = ">> Menu<<";
             this.btmenu.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 117);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(291, 32);
-            this.button1.TabIndex = 11;
-            this.button1.Text = ">> Tính Tiền<<";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(3, 79);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(291, 32);
-            this.button2.TabIndex = 10;
-            this.button2.Text = ">>Discount<<";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 41);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(291, 32);
-            this.button3.TabIndex = 9;
-            this.button3.Text = ">> Thành Viên<<";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(0, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(291, 32);
-            this.button4.TabIndex = 8;
-            this.button4.Text = ">> Menu<<";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // MainQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -303,8 +269,8 @@
             this.panel2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -326,13 +292,10 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button bttinhtien;
         private System.Windows.Forms.Button btdiscount;
         private System.Windows.Forms.Button btthanhvien;
         private System.Windows.Forms.Button btmenu;
+        private System.Windows.Forms.Button btnPhieunhap;
     }
 }
