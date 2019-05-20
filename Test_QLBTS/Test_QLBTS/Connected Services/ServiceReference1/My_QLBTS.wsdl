@@ -342,6 +342,18 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element name="Update_LoaiTV">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Update_LoaiTVResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Update_LoaiTVResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
     </xs:schema>
     <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <xs:element name="anyType" nillable="true" type="xs:anyType" />
@@ -514,6 +526,12 @@
   <wsdl:message name="IMy_QLBTS_Xem_TuyTron_OutputMessage">
     <wsdl:part name="parameters" element="tns:Xem_TuyTronResponse" />
   </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Update_LoaiTV_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_LoaiTV" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Update_LoaiTV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_LoaiTVResponse" />
+  </wsdl:message>
   <wsdl:portType name="IMy_QLBTS">
     <wsdl:operation name="DoWork">
       <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/DoWork" message="tns:IMy_QLBTS_DoWork_InputMessage" />
@@ -590,6 +608,10 @@
     <wsdl:operation name="Xem_TuyTron">
       <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_TuyTron" message="tns:IMy_QLBTS_Xem_TuyTron_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Xem_TuyTronResponse" message="tns:IMy_QLBTS_Xem_TuyTron_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_LoaiTV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Update_LoaiTV" message="tns:IMy_QLBTS_Update_LoaiTV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Update_LoaiTVResponse" message="tns:IMy_QLBTS_Update_LoaiTV_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IMy_QLBTS" type="tns:IMy_QLBTS">
@@ -758,6 +780,15 @@
     </wsdl:operation>
     <wsdl:operation name="Xem_TuyTron">
       <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Xem_TuyTron" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_LoaiTV">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Update_LoaiTV" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

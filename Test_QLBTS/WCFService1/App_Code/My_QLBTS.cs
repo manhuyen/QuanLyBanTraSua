@@ -72,6 +72,11 @@ public class My_QLBTS : IMy_QLBTS
         return t.Them_Topping(matp, tentp, gia, image);
     }
 
+    public bool Update_LoaiTV()
+    {
+        return t.Update_LoaiThanhVien();
+    }
+
     public DataTable Xem_DoUong()
     {
         string query = "select MaDU as STT, tendu as N'Tên Đồ Uống',LoaiDU.Maloai as N'Mã Loại',tenloai as N'Tên Loại',size,dongia as 'Gía Bán',HinhAnh as N'Image' from Douong,LoaiDU where Douong.Maloai=LoaiDU.Maloai";

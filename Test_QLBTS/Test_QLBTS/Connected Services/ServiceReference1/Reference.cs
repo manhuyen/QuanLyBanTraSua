@@ -128,6 +128,12 @@ namespace Test_QLBTS.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Xem_TuyTron", ReplyAction="http://tempuri.org/IMy_QLBTS/Xem_TuyTronResponse")]
         System.Threading.Tasks.Task<System.Data.DataTable> Xem_TuyTronAsync(string query);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Update_LoaiTV", ReplyAction="http://tempuri.org/IMy_QLBTS/Update_LoaiTVResponse")]
+        bool Update_LoaiTV();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Update_LoaiTV", ReplyAction="http://tempuri.org/IMy_QLBTS/Update_LoaiTVResponse")]
+        System.Threading.Tasks.Task<bool> Update_LoaiTVAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -307,6 +313,14 @@ namespace Test_QLBTS.ServiceReference1 {
         
         public System.Threading.Tasks.Task<System.Data.DataTable> Xem_TuyTronAsync(string query) {
             return base.Channel.Xem_TuyTronAsync(query);
+        }
+        
+        public bool Update_LoaiTV() {
+            return base.Channel.Update_LoaiTV();
+        }
+        
+        public System.Threading.Tasks.Task<bool> Update_LoaiTVAsync() {
+            return base.Channel.Update_LoaiTVAsync();
         }
     }
 }

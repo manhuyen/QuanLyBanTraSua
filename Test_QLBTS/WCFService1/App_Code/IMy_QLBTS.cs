@@ -49,5 +49,7 @@ public interface IMy_QLBTS
     [OperationContract]
    
     DataTable Xem_TuyTron(string query);
+    [OperationContract]
+    bool Update_LoaiTV();
 
 }

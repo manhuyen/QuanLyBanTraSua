@@ -163,5 +163,13 @@ namespace Test_QLBTS
             dataGridView1.DataSource = bus.Xem_TuyTron(query);
 
         }
+
+        private void BtReset_Click(object sender, EventArgs e)
+        {
+            bus.Update_LoaiTV();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = bus.Xem_ThanhVien();
+
+        }
     }
 }

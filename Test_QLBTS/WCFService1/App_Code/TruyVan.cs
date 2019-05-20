@@ -16,6 +16,13 @@ public class TruyVan:DB_Connection
         // TODO: Add constructor logic here
         //
     }
+    public bool Update_LoaiThanhVien()
+    {
+        string query = "update Thanhvien set loaithanhvien=N'Đồng' where 0<diemtichluy and diemtichluy<50 update Thanhvien set loaithanhvien=N'Bạc' where 50<=diemtichluy and diemtichluy <100 update Thanhvien set loaithanhvien=N'Vàng' where 100<=diemtichluy and diemtichluy <500 update Thanhvien set loaithanhvien=N'Kim Cương' where 500<=diemtichluy ";
+        Load_DB(query);
+        return true;
+
+    }
     public DataTable Load_DB(string query)
     {
         sqlConnection.Open();

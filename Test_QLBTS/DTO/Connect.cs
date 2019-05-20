@@ -11,7 +11,7 @@ namespace DTO
     public class Connect
     {
         public SqlConnection sqlconnection;
-        public string connnect = "Data Source=DINHDAN-PC;Initial Catalog=ThucTapNhom_QLBTS;Integrated Security=True";
+        public string connnect = "Data Source=DESKTOP-I0HUN56\\MSSQLSERVER1;Initial Catalog=ThucTapNhom_QLBTS;Integrated Security=True";
         public Connect()
         {
             if (sqlconnection != null && sqlconnection.State != ConnectionState.Open)
