@@ -18,7 +18,7 @@ public class TruyVan:DB_Connection
     }
     public bool Update_LoaiThanhVien()
     {
-        string query = "update Thanhvien set loaithanhvien=N'Đồng' where 0<diemtichluy and diemtichluy<50 update Thanhvien set loaithanhvien=N'Bạc' where 50<=diemtichluy and diemtichluy <100 update Thanhvien set loaithanhvien=N'Vàng' where 100<=diemtichluy and diemtichluy <500 update Thanhvien set loaithanhvien=N'Kim Cương' where 500<=diemtichluy ";
+        string query = "execute Update_Loaithanhvien";
         Load_DB(query);
         return true;
 
@@ -72,7 +72,7 @@ public class TruyVan:DB_Connection
     }
     public bool Them_Topping(string matp, string tentp, double gia, string image)
     {
-        string query = "Insert into Topping(Matopping,tentopping,giatopping,Image) values('"+matp+"',N'"+tentp+"',"+gia+",N'"+image+"')";
+        string query = "Insert into Topping(Matopping,tentopping,giatopping,HinhAnh) values('"+matp+"',N'"+tentp+"',"+gia+",N'"+image+"')";
         Load_DB(query);
         return true;
     }

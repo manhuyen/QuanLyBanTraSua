@@ -171,5 +171,12 @@ namespace Test_QLBTS
             dataGridView1.DataSource = bus.Xem_ThanhVien();
 
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmReportThanhvien f = new frmReportThanhvien();
+            f.Show();
+        }
     }
 }

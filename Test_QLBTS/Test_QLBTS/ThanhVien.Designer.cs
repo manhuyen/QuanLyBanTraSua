@@ -64,6 +64,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.btReset = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -87,6 +88,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1065, 400);
             this.dataGridView1.TabIndex = 0;
@@ -252,7 +254,7 @@
             this.toolStripButton2});
             this.toolStrip1.Location = new System.Drawing.Point(133, 258);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(36, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(42, 27);
             this.toolStrip1.TabIndex = 62;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -262,7 +264,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton2.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton2.Text = "toolStripButton1";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -274,7 +276,7 @@
             this.toolStripButton1});
             this.toolStrip2.Location = new System.Drawing.Point(255, 258);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(36, 27);
+            this.toolStrip2.Size = new System.Drawing.Size(42, 27);
             this.toolStrip2.TabIndex = 63;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -284,7 +286,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -296,7 +298,7 @@
             this.toolStripButton3});
             this.toolStrip3.Location = new System.Drawing.Point(374, 257);
             this.toolStrip3.Name = "toolStrip3";
-            this.toolStrip3.Size = new System.Drawing.Size(36, 27);
+            this.toolStrip3.Size = new System.Drawing.Size(42, 27);
             this.toolStrip3.TabIndex = 64;
             this.toolStrip3.Text = "toolStrip3";
             // 
@@ -306,7 +308,7 @@
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton3.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton3.Text = "toolStripButton3";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
@@ -352,7 +354,7 @@
             this.toolStripButton4});
             this.toolStrip4.Location = new System.Drawing.Point(477, 258);
             this.toolStrip4.Name = "toolStrip4";
-            this.toolStrip4.Size = new System.Drawing.Size(36, 27);
+            this.toolStrip4.Size = new System.Drawing.Size(42, 27);
             this.toolStrip4.TabIndex = 69;
             this.toolStrip4.Text = "toolStrip4";
             // 
@@ -362,7 +364,7 @@
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton4.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton4.Text = "toolStripButton3";
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
@@ -397,6 +399,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btReset);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.txbtimkiem);
@@ -429,6 +432,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1065, 301);
             this.panel1.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(840, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 24);
+            this.button1.TabIndex = 73;
+            this.button1.Text = "Mẫu Biểu";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // ThanhVien
             // 
@@ -491,5 +504,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btReset;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
     }
 }

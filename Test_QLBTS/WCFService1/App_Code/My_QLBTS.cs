@@ -107,13 +107,13 @@ public class My_QLBTS : IMy_QLBTS
 
     public DataTable Xem_DoUong()
     {
-        string query = "select MaDU as STT, tendu as N'Tên Đồ Uống',LoaiDU.Maloai as N'Mã Loại',tenloai as N'Tên Loại',size,dongia as 'Gía Bán',HinhAnh as N'Image' from Douong,LoaiDU where Douong.Maloai=LoaiDU.Maloai";
+        string query = "execute Xem_DoUong";
         return t.Load_DB(query);
 
     }
    public DataTable Xem_ThanhVien()
     {
-            string query = "Select * from Thanhvien";
+            string query = "execute Xem_Thanhvien";
             return t.Load_DB(query);
         
     }
@@ -121,7 +121,7 @@ public class My_QLBTS : IMy_QLBTS
 
     public DataTable Xem_Topping()
     {
-         string query = "select * from Topping";
+         string query = "execute Xem_Topping";
         return t.Load_DB(query);
     }
     public DataTable Xem_Nguyenlieu()

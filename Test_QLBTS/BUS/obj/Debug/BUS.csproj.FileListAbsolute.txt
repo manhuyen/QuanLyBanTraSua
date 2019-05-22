@@ -31,3 +31,14 @@ C:\Users\ADMIN\Desktop\git\QuanLyBanTraSua\Test_QLBTS\BUS\obj\Debug\BUS.csproj.C
 C:\Users\ADMIN\Desktop\git\QuanLyBanTraSua\Test_QLBTS\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\ADMIN\Desktop\git\QuanLyBanTraSua\Test_QLBTS\BUS\obj\Debug\BUS.dll
 C:\Users\ADMIN\Desktop\git\QuanLyBanTraSua\Test_QLBTS\BUS\obj\Debug\BUS.pdb
+C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\bin\Debug\BUS.dll
+C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\bin\Debug\BUS.pdb
+C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\bin\Debug\DAL.dll
+C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\bin\Debug\DTO.dll
+C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\bin\Debug\DAL.pdb
+C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\bin\Debug\DTO.pdb
+C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\obj\Debug\BUS.dll
+C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\obj\Debug\BUS.pdb
