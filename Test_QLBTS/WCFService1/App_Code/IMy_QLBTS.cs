@@ -75,5 +75,9 @@ public interface IMy_QLBTS
     DataTable Xem_TuyTron(string query);
     [OperationContract]
     bool Update_LoaiTV();
+    [OperationContract]
+    bool Check_Thanhvien(string matv);
+    [OperationContract]
+    bool Check_Topping(string matp);
 
 }

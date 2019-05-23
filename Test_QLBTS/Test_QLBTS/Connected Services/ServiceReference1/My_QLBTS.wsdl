@@ -564,6 +564,34 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element name="Check_Thanhvien">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="matv" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Check_ThanhvienResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Check_ThanhvienResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Check_Topping">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="matp" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Check_ToppingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Check_ToppingResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
     </xs:schema>
     <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <xs:element name="anyType" nillable="true" type="xs:anyType" />
@@ -814,6 +842,18 @@
   <wsdl:message name="IMy_QLBTS_Update_LoaiTV_OutputMessage">
     <wsdl:part name="parameters" element="tns:Update_LoaiTVResponse" />
   </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Check_Thanhvien_InputMessage">
+    <wsdl:part name="parameters" element="tns:Check_Thanhvien" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Check_Thanhvien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Check_ThanhvienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Check_Topping_InputMessage">
+    <wsdl:part name="parameters" element="tns:Check_Topping" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_Check_Topping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Check_ToppingResponse" />
+  </wsdl:message>
   <wsdl:portType name="IMy_QLBTS">
     <wsdl:operation name="DoWork">
       <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/DoWork" message="tns:IMy_QLBTS_DoWork_InputMessage" />
@@ -942,6 +982,14 @@
     <wsdl:operation name="Update_LoaiTV">
       <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Update_LoaiTV" message="tns:IMy_QLBTS_Update_LoaiTV_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Update_LoaiTVResponse" message="tns:IMy_QLBTS_Update_LoaiTV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Check_Thanhvien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Check_Thanhvien" message="tns:IMy_QLBTS_Check_Thanhvien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Check_ThanhvienResponse" message="tns:IMy_QLBTS_Check_Thanhvien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Check_Topping">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Check_Topping" message="tns:IMy_QLBTS_Check_Topping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Check_ToppingResponse" message="tns:IMy_QLBTS_Check_Topping_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IMy_QLBTS" type="tns:IMy_QLBTS">
@@ -1227,6 +1275,24 @@
     </wsdl:operation>
     <wsdl:operation name="Update_LoaiTV">
       <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Update_LoaiTV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Check_Thanhvien">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Check_Thanhvien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Check_Topping">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Check_Topping" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -206,6 +206,18 @@ namespace Test_QLBTS.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Update_LoaiTV", ReplyAction="http://tempuri.org/IMy_QLBTS/Update_LoaiTVResponse")]
         System.Threading.Tasks.Task<bool> Update_LoaiTVAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Check_Thanhvien", ReplyAction="http://tempuri.org/IMy_QLBTS/Check_ThanhvienResponse")]
+        bool Check_Thanhvien(string matv);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Check_Thanhvien", ReplyAction="http://tempuri.org/IMy_QLBTS/Check_ThanhvienResponse")]
+        System.Threading.Tasks.Task<bool> Check_ThanhvienAsync(string matv);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Check_Topping", ReplyAction="http://tempuri.org/IMy_QLBTS/Check_ToppingResponse")]
+        bool Check_Topping(string matp);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Check_Topping", ReplyAction="http://tempuri.org/IMy_QLBTS/Check_ToppingResponse")]
+        System.Threading.Tasks.Task<bool> Check_ToppingAsync(string matp);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -489,6 +501,22 @@ namespace Test_QLBTS.ServiceReference1 {
         
         public System.Threading.Tasks.Task<bool> Update_LoaiTVAsync() {
             return base.Channel.Update_LoaiTVAsync();
+        }
+        
+        public bool Check_Thanhvien(string matv) {
+            return base.Channel.Check_Thanhvien(matv);
+        }
+        
+        public System.Threading.Tasks.Task<bool> Check_ThanhvienAsync(string matv) {
+            return base.Channel.Check_ThanhvienAsync(matv);
+        }
+        
+        public bool Check_Topping(string matp) {
+            return base.Channel.Check_Topping(matp);
+        }
+        
+        public System.Threading.Tasks.Task<bool> Check_ToppingAsync(string matp) {
+            return base.Channel.Check_ToppingAsync(matp);
         }
     }
 }

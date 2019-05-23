@@ -176,4 +176,13 @@ public class My_QLBTS : IMy_QLBTS
         return t.Xoa_PN(manhap);
     }
 
+    public bool Check_Thanhvien(string matv)
+    {
+        return t.checkID_Thanhvien(matv);
+    }
+
+    public bool Check_Topping(string matp)
+    {
+        return t.checkID_Topping(matp);
+    }
 }

@@ -233,16 +233,23 @@ namespace Test_QLBTS
             }
             else
             {
-                MessageBox.Show("Thêm Thành Công!");
-                pictureBox2.Image = null;
-                m._matopping = txbMaTopping.Text;
-                m._tentopping = txbTenTopping.Text;
-                m._gia = Convert.ToDouble(txbgiatopping.Text);
-                m._image = txbimage.Text;
-                b.Them_Topping(m._matopping,m._tentopping,m._gia,m._image);
-                Clear2();
-                 dataGridView2.DataSource = null;
-                dataGridView2.DataSource = b.Xem_Topping();
+                if (b.Check_Topping(txbMaTopping.Text) == false)
+                {
+                    MessageBox.Show("Ma da ton tai!");
+                }
+                else
+                {
+                    MessageBox.Show("Thêm Thành Công!");
+                    pictureBox2.Image = null;
+                    m._matopping = txbMaTopping.Text;
+                    m._tentopping = txbTenTopping.Text;
+                    m._gia = Convert.ToDouble(txbgiatopping.Text);
+                    m._image = txbimage.Text;
+                    b.Them_Topping(m._matopping, m._tentopping, m._gia, m._image);
+                    Clear2();
+                    dataGridView2.DataSource = null;
+                    dataGridView2.DataSource = b.Xem_Topping();
+                }
             }
 
         }

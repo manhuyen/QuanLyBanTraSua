@@ -213,7 +213,48 @@ public class TruyVan:DB_Connection
         }
 
     }
-    
-   
+    public bool checkID_Thanhvien(string matv)
+    {
+        string query = "select * from Thanhvien where matv='" + matv+"'";
+        DataTable dt = new DataTable();
+        dt = Load_DB(query);
+        string check = null;
+        foreach (DataRow dr in dt.Rows)
+        {
+            check = dr["MaTV"].ToString();
+        }
+        if (check!= null)
+        {
+           
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+
+    }
+    public bool checkID_Topping(string matp)
+    {
+        string query = "select * from Topping where  Matopping='" + matp + "'";
+        DataTable dt = new DataTable();
+        dt = Load_DB(query);
+        string check = null;
+        foreach (DataRow dr in dt.Rows)
+        {
+            check = dr["Matopping"].ToString();
+        }
+        if (check != null)
+        {
+
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+
+    }
+
 
 }

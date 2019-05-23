@@ -51,34 +51,41 @@ namespace Test_QLBTS
             }
             else
             {
+                if (bus.Check_Thanhvien(txbmatv.Text) == false)
+                {
+                    MessageBox.Show("Ma TV da ton tai!");
+                }
+                else
+                {
 
-                //MessageBox.Show("Thêm Thành Công!");
-                //tv._diachi = txbdiachi.Text;
-                //tv._diemTl = Convert.ToInt32(txbdiemTl.Text);
-                //tv._email = txbemail.Text;
-                //tv._hoten = txbhoten.Text;
-                //tv._matv = txbmatv.Text;
-                //tv._stt = Convert.ToInt32(txtSTT.Text);
-                //tv._loaitv = txbloattv.Text;
-                //tv._sodt = txbsdt.Text;
-                //Clear_Textbox();
-                //bus.Them_NV(tv);
-                //bus.Xem_ThanhVien().Clear();
-                //dataGridView1.DataSource = bus.Xem_ThanhVien();
-                MessageBox.Show("Thêm Thành Công!");
-                tv._diachi = txbdiachi.Text;
-                tv._diemTl = Convert.ToInt16(txbdiemTl.Text);
-                tv._email = txbemail.Text;
-                tv._hoten = txbhoten.Text;
-                tv._matv = txbmatv.Text;
-                tv._stt = Convert.ToInt16(txtSTT.Text);
-                tv._loaitv = txbloattv.Text;
-                tv._sodt = txbsdt.Text;
-               
-                bus.Them_ThanhVien(tv._matv,tv._stt,tv._hoten,tv._loaitv,tv._sodt,tv._email,tv._diachi,tv._diemTl);
-                dataGridView1.DataSource = null;
-                dataGridView1.DataSource = bus.Xem_ThanhVien();
-                Clear_Textbox();
+                    //MessageBox.Show("Thêm Thành Công!");
+                    //tv._diachi = txbdiachi.Text;
+                    //tv._diemTl = Convert.ToInt32(txbdiemTl.Text);
+                    //tv._email = txbemail.Text;
+                    //tv._hoten = txbhoten.Text;
+                    //tv._matv = txbmatv.Text;
+                    //tv._stt = Convert.ToInt32(txtSTT.Text);
+                    //tv._loaitv = txbloattv.Text;
+                    //tv._sodt = txbsdt.Text;
+                    //Clear_Textbox();
+                    //bus.Them_NV(tv);
+                    //bus.Xem_ThanhVien().Clear();
+                    //dataGridView1.DataSource = bus.Xem_ThanhVien();
+                    MessageBox.Show("Thêm Thành Công!");
+                    tv._diachi = txbdiachi.Text;
+                    tv._diemTl = Convert.ToInt16(txbdiemTl.Text);
+                    tv._email = txbemail.Text;
+                    tv._hoten = txbhoten.Text;
+                    tv._matv = txbmatv.Text;
+                    tv._stt = Convert.ToInt16(txtSTT.Text);
+                    tv._loaitv = txbloattv.Text;
+                    tv._sodt = txbsdt.Text;
+
+                    bus.Them_ThanhVien(tv._matv, tv._stt, tv._hoten, tv._loaitv, tv._sodt, tv._email, tv._diachi, tv._diemTl);
+                    dataGridView1.DataSource = null;
+                    dataGridView1.DataSource = bus.Xem_ThanhVien();
+                    Clear_Textbox();
+                }
 
 
 
