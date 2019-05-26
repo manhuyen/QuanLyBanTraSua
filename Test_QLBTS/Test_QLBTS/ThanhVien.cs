@@ -185,11 +185,5 @@ namespace Test_QLBTS
             frmReportThanhvien f = new frmReportThanhvien();
             f.Show();
         }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            FrmDiemCong f = new FrmDiemCong();
-            f.Show();
-        }
     }
 }

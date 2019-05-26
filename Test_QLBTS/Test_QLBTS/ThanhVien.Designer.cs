@@ -64,7 +64,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.btReset = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -80,7 +79,7 @@
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Location = new System.Drawing.Point(3, 310);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1283, 400);
+            this.panel2.Size = new System.Drawing.Size(1065, 400);
             this.panel2.TabIndex = 6;
             // 
             // dataGridView1
@@ -91,14 +90,14 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1283, 400);
+            this.dataGridView1.Size = new System.Drawing.Size(1065, 400);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 111);
+            this.label1.Location = new System.Drawing.Point(43, 114);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 17);
             this.label1.TabIndex = 44;
@@ -108,7 +107,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(68, 159);
+            this.label2.Location = new System.Drawing.Point(46, 162);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 17);
             this.label2.TabIndex = 45;
@@ -118,7 +117,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(65, 206);
+            this.label3.Location = new System.Drawing.Point(43, 209);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 17);
             this.label3.TabIndex = 46;
@@ -128,7 +127,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(831, 213);
+            this.label4.Location = new System.Drawing.Point(617, 215);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 17);
             this.label4.TabIndex = 47;
@@ -138,7 +137,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(827, 70);
+            this.label6.Location = new System.Drawing.Point(613, 72);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 17);
             this.label6.TabIndex = 48;
@@ -148,7 +147,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(824, 116);
+            this.label5.Location = new System.Drawing.Point(610, 118);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 17);
             this.label5.TabIndex = 49;
@@ -156,35 +155,35 @@
             // 
             // txtSTT
             // 
-            this.txtSTT.Location = new System.Drawing.Point(152, 159);
+            this.txtSTT.Location = new System.Drawing.Point(130, 162);
             this.txtSTT.Name = "txtSTT";
             this.txtSTT.Size = new System.Drawing.Size(331, 22);
             this.txtSTT.TabIndex = 51;
             // 
             // txbloattv
             // 
-            this.txbloattv.Location = new System.Drawing.Point(152, 206);
+            this.txbloattv.Location = new System.Drawing.Point(130, 209);
             this.txbloattv.Name = "txbloattv";
             this.txbloattv.Size = new System.Drawing.Size(331, 22);
             this.txbloattv.TabIndex = 52;
             // 
             // txbsdt
             // 
-            this.txbsdt.Location = new System.Drawing.Point(933, 213);
+            this.txbsdt.Location = new System.Drawing.Point(704, 215);
             this.txbsdt.Name = "txbsdt";
-            this.txbsdt.Size = new System.Drawing.Size(303, 22);
+            this.txbsdt.Size = new System.Drawing.Size(318, 22);
             this.txbsdt.TabIndex = 53;
             // 
             // txbdiachi
             // 
-            this.txbdiachi.Location = new System.Drawing.Point(933, 116);
+            this.txbdiachi.Location = new System.Drawing.Point(719, 118);
             this.txbdiachi.Name = "txbdiachi";
             this.txbdiachi.Size = new System.Drawing.Size(303, 22);
             this.txbdiachi.TabIndex = 54;
             // 
             // txbemail
             // 
-            this.txbemail.Location = new System.Drawing.Point(933, 70);
+            this.txbemail.Location = new System.Drawing.Point(719, 72);
             this.txbemail.Name = "txbemail";
             this.txbemail.Size = new System.Drawing.Size(303, 22);
             this.txbemail.TabIndex = 55;
@@ -213,7 +212,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(824, 166);
+            this.label11.Location = new System.Drawing.Point(610, 168);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(68, 17);
             this.label11.TabIndex = 58;
@@ -221,7 +220,7 @@
             // 
             // txbdiemTl
             // 
-            this.txbdiemTl.Location = new System.Drawing.Point(933, 163);
+            this.txbdiemTl.Location = new System.Drawing.Point(719, 165);
             this.txbdiemTl.Name = "txbdiemTl";
             this.txbdiemTl.Size = new System.Drawing.Size(303, 22);
             this.txbdiemTl.TabIndex = 59;
@@ -231,7 +230,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Maroon;
-            this.label9.Location = new System.Drawing.Point(578, 11);
+            this.label9.Location = new System.Drawing.Point(455, 10);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(145, 29);
             this.label9.TabIndex = 60;
@@ -315,7 +314,7 @@
             // 
             // txbmatv
             // 
-            this.txbmatv.Location = new System.Drawing.Point(152, 108);
+            this.txbmatv.Location = new System.Drawing.Point(130, 111);
             this.txbmatv.Name = "txbmatv";
             this.txbmatv.Size = new System.Drawing.Size(331, 22);
             this.txbmatv.TabIndex = 65;
@@ -324,7 +323,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(65, 68);
+            this.label12.Location = new System.Drawing.Point(43, 71);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(61, 17);
             this.label12.TabIndex = 66;
@@ -332,7 +331,7 @@
             // 
             // txbhoten
             // 
-            this.txbhoten.Location = new System.Drawing.Point(152, 65);
+            this.txbhoten.Location = new System.Drawing.Point(130, 68);
             this.txbhoten.Name = "txbhoten";
             this.txbhoten.Size = new System.Drawing.Size(331, 22);
             this.txbhoten.TabIndex = 67;
@@ -371,7 +370,7 @@
             // 
             // txbtimkiem
             // 
-            this.txbtimkiem.Location = new System.Drawing.Point(766, 258);
+            this.txbtimkiem.Location = new System.Drawing.Point(552, 260);
             this.txbtimkiem.Name = "txbtimkiem";
             this.txbtimkiem.Size = new System.Drawing.Size(300, 22);
             this.txbtimkiem.TabIndex = 70;
@@ -381,7 +380,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1073, 258);
+            this.label14.Location = new System.Drawing.Point(859, 260);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(88, 20);
             this.label14.TabIndex = 71;
@@ -389,7 +388,7 @@
             // 
             // btReset
             // 
-            this.btReset.Location = new System.Drawing.Point(1167, 255);
+            this.btReset.Location = new System.Drawing.Point(953, 257);
             this.btReset.Name = "btReset";
             this.btReset.Size = new System.Drawing.Size(87, 27);
             this.btReset.TabIndex = 72;
@@ -400,7 +399,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btReset);
             this.panel1.Controls.Add(this.label14);
@@ -432,22 +430,12 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1283, 301);
+            this.panel1.Size = new System.Drawing.Size(1065, 301);
             this.panel1.TabIndex = 5;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(980, 16);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 24);
-            this.button2.TabIndex = 74;
-            this.button2.Text = "+";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1133, 16);
+            this.button1.Location = new System.Drawing.Point(840, 15);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 24);
             this.button1.TabIndex = 73;
@@ -462,7 +450,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ThanhVien";
-            this.Size = new System.Drawing.Size(1289, 713);
+            this.Size = new System.Drawing.Size(1072, 713);
             this.Load += new System.EventHandler(this.ThanhVien_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -482,6 +470,7 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -516,7 +505,5 @@
         private System.Windows.Forms.Button btReset;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
     }
 }

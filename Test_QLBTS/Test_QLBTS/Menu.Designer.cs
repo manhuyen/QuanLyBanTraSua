@@ -53,6 +53,7 @@
             this.txbhinhanh = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btopen = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txbgia = new System.Windows.Forms.TextBox();
@@ -82,6 +83,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txbgiatopping = new System.Windows.Forms.TextBox();
@@ -91,8 +93,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -100,6 +101,7 @@
             this.toolStrip5.SuspendLayout();
             this.toolStrip6.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.toolStrip7.SuspendLayout();
@@ -107,28 +109,28 @@
             this.toolStrip9.SuspendLayout();
             this.toolStrip10.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Location = new System.Drawing.Point(0, 75);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1259, 619);
+            this.panel1.Size = new System.Drawing.Size(1065, 619);
             this.panel1.TabIndex = 4;
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(7, 74);
+            this.tabControl1.Location = new System.Drawing.Point(4, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1337, 631);
+            this.tabControl1.Size = new System.Drawing.Size(1058, 613);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -162,7 +164,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1329, 602);
+            this.tabPage1.Size = new System.Drawing.Size(1050, 584);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Đồ Uống";
             // 
@@ -170,7 +172,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1157, 33);
+            this.label12.Location = new System.Drawing.Point(671, 20);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(88, 20);
             this.label12.TabIndex = 73;
@@ -189,7 +191,7 @@
             // 
             // txbtimkiem
             // 
-            this.txbtimkiem.Location = new System.Drawing.Point(851, 23);
+            this.txbtimkiem.Location = new System.Drawing.Point(365, 13);
             this.txbtimkiem.Name = "txbtimkiem";
             this.txbtimkiem.Size = new System.Drawing.Size(300, 30);
             this.txbtimkiem.TabIndex = 72;
@@ -203,7 +205,7 @@
             "L"});
             this.combSize.Location = new System.Drawing.Point(134, 355);
             this.combSize.Name = "combSize";
-            this.combSize.Size = new System.Drawing.Size(255, 33);
+            this.combSize.Size = new System.Drawing.Size(216, 33);
             this.combSize.TabIndex = 120;
             // 
             // combLoaidu
@@ -222,7 +224,7 @@
             "10.Drink"});
             this.combLoaidu.Location = new System.Drawing.Point(134, 257);
             this.combLoaidu.Name = "combLoaidu";
-            this.combLoaidu.Size = new System.Drawing.Size(255, 33);
+            this.combLoaidu.Size = new System.Drawing.Size(216, 33);
             this.combLoaidu.TabIndex = 119;
             // 
             // toolStrip1
@@ -233,7 +235,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(310, 536);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(42, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(36, 27);
             this.toolStrip1.TabIndex = 118;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -243,7 +245,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton1.Text = "toolStripButton3";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -265,7 +267,7 @@
             this.toolStripButton2});
             this.toolStrip2.Location = new System.Drawing.Point(188, 538);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(42, 27);
+            this.toolStrip2.Size = new System.Drawing.Size(36, 27);
             this.toolStrip2.TabIndex = 116;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -275,7 +277,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton2.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton2.Text = "toolStripButton3";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -297,7 +299,7 @@
             this.toolStripButton5});
             this.toolStrip5.Location = new System.Drawing.Point(306, 495);
             this.toolStrip5.Name = "toolStrip5";
-            this.toolStrip5.Size = new System.Drawing.Size(42, 27);
+            this.toolStrip5.Size = new System.Drawing.Size(36, 27);
             this.toolStrip5.TabIndex = 114;
             this.toolStrip5.Text = "toolStrip5";
             // 
@@ -307,7 +309,7 @@
             this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton5.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton5.Text = "toolStripButton1";
             this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
@@ -319,7 +321,7 @@
             this.toolStripButton6});
             this.toolStrip6.Location = new System.Drawing.Point(188, 499);
             this.toolStrip6.Name = "toolStrip6";
-            this.toolStrip6.Size = new System.Drawing.Size(42, 27);
+            this.toolStrip6.Size = new System.Drawing.Size(36, 27);
             this.toolStrip6.TabIndex = 113;
             this.toolStrip6.Text = "toolStrip6";
             // 
@@ -329,7 +331,7 @@
             this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton6.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton6.Text = "toolStripButton1";
             this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
@@ -357,7 +359,7 @@
             // 
             this.txbhinhanh.Location = new System.Drawing.Point(134, 456);
             this.txbhinhanh.Name = "txbhinhanh";
-            this.txbhinhanh.Size = new System.Drawing.Size(255, 30);
+            this.txbhinhanh.Size = new System.Drawing.Size(216, 30);
             this.txbhinhanh.TabIndex = 109;
             // 
             // label13
@@ -373,10 +375,20 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(395, 59);
+            this.panel3.Location = new System.Drawing.Point(365, 49);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(928, 529);
+            this.panel3.Size = new System.Drawing.Size(679, 529);
             this.panel3.TabIndex = 107;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(679, 529);
+            this.dataGridView1.TabIndex = 0;
             // 
             // btopen
             // 
@@ -394,7 +406,7 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Location = new System.Drawing.Point(14, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(375, 194);
+            this.pictureBox1.Size = new System.Drawing.Size(336, 194);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 105;
             this.pictureBox1.TabStop = false;
@@ -403,14 +415,14 @@
             // 
             this.txbgia.Location = new System.Drawing.Point(134, 401);
             this.txbgia.Name = "txbgia";
-            this.txbgia.Size = new System.Drawing.Size(255, 30);
+            this.txbgia.Size = new System.Drawing.Size(216, 30);
             this.txbgia.TabIndex = 99;
             // 
             // txbtendu
             // 
             this.txbtendu.Location = new System.Drawing.Point(134, 304);
             this.txbtendu.Name = "txbtendu";
-            this.txbtendu.Size = new System.Drawing.Size(255, 30);
+            this.txbtendu.Size = new System.Drawing.Size(216, 30);
             this.txbtendu.TabIndex = 97;
             // 
             // label4
@@ -481,7 +493,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1329, 602);
+            this.tabPage2.Size = new System.Drawing.Size(1050, 584);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Topping";
             // 
@@ -489,7 +501,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(1145, 12);
+            this.label20.Location = new System.Drawing.Point(673, 14);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(88, 20);
             this.label20.TabIndex = 133;
@@ -497,7 +509,7 @@
             // 
             // txbtimkiemtopping
             // 
-            this.txbtimkiemtopping.Location = new System.Drawing.Point(839, 12);
+            this.txbtimkiemtopping.Location = new System.Drawing.Point(367, 12);
             this.txbtimkiemtopping.Name = "txbtimkiemtopping";
             this.txbtimkiemtopping.Size = new System.Drawing.Size(300, 22);
             this.txbtimkiemtopping.TabIndex = 132;
@@ -516,16 +528,16 @@
             // 
             // txbimage
             // 
-            this.txbimage.Location = new System.Drawing.Point(112, 400);
+            this.txbimage.Location = new System.Drawing.Point(115, 378);
             this.txbimage.Name = "txbimage";
-            this.txbimage.Size = new System.Drawing.Size(333, 22);
+            this.txbimage.Size = new System.Drawing.Size(240, 22);
             this.txbimage.TabIndex = 130;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 405);
+            this.label5.Location = new System.Drawing.Point(33, 383);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 17);
             this.label5.TabIndex = 129;
@@ -533,16 +545,16 @@
             // 
             // txbMaTopping
             // 
-            this.txbMaTopping.Location = new System.Drawing.Point(114, 278);
+            this.txbMaTopping.Location = new System.Drawing.Point(117, 256);
             this.txbMaTopping.Name = "txbMaTopping";
-            this.txbMaTopping.Size = new System.Drawing.Size(331, 22);
+            this.txbMaTopping.Size = new System.Drawing.Size(240, 22);
             this.txbMaTopping.TabIndex = 128;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(8, 278);
+            this.label10.Location = new System.Drawing.Point(11, 256);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(93, 17);
             this.label10.TabIndex = 127;
@@ -554,9 +566,9 @@
             this.toolStrip7.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip7.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton7});
-            this.toolStrip7.Location = new System.Drawing.Point(285, 500);
+            this.toolStrip7.Location = new System.Drawing.Point(291, 468);
             this.toolStrip7.Name = "toolStrip7";
-            this.toolStrip7.Size = new System.Drawing.Size(42, 27);
+            this.toolStrip7.Size = new System.Drawing.Size(36, 27);
             this.toolStrip7.TabIndex = 126;
             this.toolStrip7.Text = "toolStrip7";
             this.toolStrip7.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip7_ItemClicked);
@@ -567,14 +579,14 @@
             this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
             this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton7.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton7.Text = "toolStripButton3";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(232, 502);
+            this.label16.Location = new System.Drawing.Point(238, 470);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(50, 20);
             this.label16.TabIndex = 125;
@@ -586,9 +598,9 @@
             this.toolStrip8.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip8.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton8});
-            this.toolStrip8.Location = new System.Drawing.Point(163, 502);
+            this.toolStrip8.Location = new System.Drawing.Point(169, 470);
             this.toolStrip8.Name = "toolStrip8";
-            this.toolStrip8.Size = new System.Drawing.Size(42, 27);
+            this.toolStrip8.Size = new System.Drawing.Size(36, 27);
             this.toolStrip8.TabIndex = 124;
             this.toolStrip8.Text = "toolStrip8";
             // 
@@ -598,7 +610,7 @@
             this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
             this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton8.Name = "toolStripButton8";
-            this.toolStripButton8.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton8.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton8.Text = "toolStripButton3";
             this.toolStripButton8.Click += new System.EventHandler(this.toolStripButton8_Click);
             // 
@@ -606,7 +618,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(119, 507);
+            this.label17.Location = new System.Drawing.Point(125, 475);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(41, 20);
             this.label17.TabIndex = 123;
@@ -618,9 +630,9 @@
             this.toolStrip9.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip9.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton9});
-            this.toolStrip9.Location = new System.Drawing.Point(281, 459);
+            this.toolStrip9.Location = new System.Drawing.Point(287, 427);
             this.toolStrip9.Name = "toolStrip9";
-            this.toolStrip9.Size = new System.Drawing.Size(42, 27);
+            this.toolStrip9.Size = new System.Drawing.Size(36, 27);
             this.toolStrip9.TabIndex = 122;
             this.toolStrip9.Text = "toolStrip9";
             // 
@@ -630,7 +642,7 @@
             this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
             this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton9.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton9.Text = "toolStripButton1";
             this.toolStripButton9.Click += new System.EventHandler(this.toolStripButton9_Click);
             // 
@@ -640,9 +652,9 @@
             this.toolStrip10.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip10.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton10});
-            this.toolStrip10.Location = new System.Drawing.Point(163, 463);
+            this.toolStrip10.Location = new System.Drawing.Point(169, 431);
             this.toolStrip10.Name = "toolStrip10";
-            this.toolStrip10.Size = new System.Drawing.Size(42, 27);
+            this.toolStrip10.Size = new System.Drawing.Size(36, 27);
             this.toolStrip10.TabIndex = 121;
             this.toolStrip10.Text = "toolStrip10";
             // 
@@ -652,7 +664,7 @@
             this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
             this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton10.Name = "toolStripButton10";
-            this.toolStripButton10.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton10.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton10.Text = "toolStripButton1";
             this.toolStripButton10.Click += new System.EventHandler(this.toolStripButton10_Click);
             // 
@@ -660,7 +672,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(232, 463);
+            this.label18.Location = new System.Drawing.Point(238, 431);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(41, 20);
             this.label18.TabIndex = 120;
@@ -670,7 +682,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(105, 468);
+            this.label19.Location = new System.Drawing.Point(111, 436);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(55, 20);
             this.label19.TabIndex = 119;
@@ -679,10 +691,20 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.dataGridView2);
-            this.panel4.Location = new System.Drawing.Point(451, 40);
+            this.panel4.Location = new System.Drawing.Point(366, 40);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(787, 538);
+            this.panel4.Size = new System.Drawing.Size(678, 538);
             this.panel4.TabIndex = 115;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(678, 538);
+            this.dataGridView2.TabIndex = 0;
             // 
             // button1
             // 
@@ -700,23 +722,23 @@
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Location = new System.Drawing.Point(14, 6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(431, 205);
+            this.pictureBox2.Size = new System.Drawing.Size(346, 205);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 113;
             this.pictureBox2.TabStop = false;
             // 
             // txbgiatopping
             // 
-            this.txbgiatopping.Location = new System.Drawing.Point(112, 357);
+            this.txbgiatopping.Location = new System.Drawing.Point(115, 335);
             this.txbgiatopping.Name = "txbgiatopping";
-            this.txbgiatopping.Size = new System.Drawing.Size(333, 22);
+            this.txbgiatopping.Size = new System.Drawing.Size(240, 22);
             this.txbgiatopping.TabIndex = 108;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(30, 362);
+            this.label11.Location = new System.Drawing.Point(33, 340);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(33, 17);
             this.label11.TabIndex = 107;
@@ -724,16 +746,16 @@
             // 
             // txbTenTopping
             // 
-            this.txbTenTopping.Location = new System.Drawing.Point(112, 318);
+            this.txbTenTopping.Location = new System.Drawing.Point(115, 296);
             this.txbTenTopping.Name = "txbTenTopping";
-            this.txbTenTopping.Size = new System.Drawing.Size(333, 22);
+            this.txbTenTopping.Size = new System.Drawing.Size(240, 22);
             this.txbTenTopping.TabIndex = 106;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 318);
+            this.label6.Location = new System.Drawing.Point(9, 296);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 17);
             this.label6.TabIndex = 103;
@@ -751,7 +773,7 @@
             this.panel2.Controls.Add(this.label9);
             this.panel2.Location = new System.Drawing.Point(0, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1341, 65);
+            this.panel2.Size = new System.Drawing.Size(1065, 65);
             this.panel2.TabIndex = 5;
             // 
             // label9
@@ -759,44 +781,22 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Maroon;
-            this.label9.Location = new System.Drawing.Point(560, 16);
+            this.label9.Location = new System.Drawing.Point(467, 15);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 38);
             this.label9.TabIndex = 104;
             this.label9.Text = "Menu";
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(787, 538);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(928, 529);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Menu";
-            this.Size = new System.Drawing.Size(1344, 705);
+            this.Size = new System.Drawing.Size(1074, 697);
             this.Load += new System.EventHandler(this.Menu_Load);
+            this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -809,6 +809,7 @@
             this.toolStrip6.ResumeLayout(false);
             this.toolStrip6.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
@@ -821,11 +822,10 @@
             this.toolStrip10.ResumeLayout(false);
             this.toolStrip10.PerformLayout();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -891,9 +891,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txbtimkiem;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txbtimkiemtopping;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

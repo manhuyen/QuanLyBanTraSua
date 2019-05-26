@@ -22,7 +22,7 @@ namespace Test_QLBTS
         private void TinhTien_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            SqlConnection sqlConnection = new SqlConnection("Data Source=DESKTOP-I0HUN56\\MSSQLSERVER1;Initial Catalog=N5_T3_QLBanTraSua;Integrated Security=True");
+            SqlConnection sqlConnection = new SqlConnection("DESKTOP-62LMKSH\\SQLEXPRESS;Initial Catalog=N5_T3_QLBanTraSua;Integrated Security=True");
             sqlConnection.Open();
 
             string query = "select * from HoaDon";

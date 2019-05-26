@@ -185,4 +185,10 @@ public class My_QLBTS : IMy_QLBTS
     {
         return t.checkID_Topping(matp);
     }
+
+    public DataTable DoanhThu_DateToDate(string From, string To)
+    {
+        string query = String.Format("exec rpHoaDon_DateToDate '{0}', '{1}'", From, To);
+        return t.Load_DB(query);
+    }
 }
