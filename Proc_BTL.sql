@@ -68,7 +68,7 @@ end
 go
 execute Xoa_DoUong 1
 go
-alter proc Sua_DoUong(@madu int,@tendu nvarchar(50),@size nvarchar(50),@dongia float,@hinhanh nvarchar(100),@maloai int,@tenloai nvarchar(50))
+create proc Sua_DoUong(@madu int,@tendu nvarchar(50),@size nvarchar(50),@dongia float,@hinhanh nvarchar(100),@maloai int,@tenloai nvarchar(50))
 as
 begin
 update Douong
@@ -79,7 +79,7 @@ end
 go
 execute Sua_DoUong 1,N'',N'',1,N'',1,N''
 go
-alter proc Them_Topping(@matopping char(10),@tentopping nvarchar(50),@hinhanh nvarchar(100),@giatopping float)
+create proc Them_Topping(@matopping char(10),@tentopping nvarchar(50),@hinhanh nvarchar(100),@giatopping float)
 as
 begin
 Insert into Topping(Matopping,tentopping,HinhAnh,giatopping) values(@matopping,@tentopping,@hinhanh,@giatopping)

@@ -196,10 +196,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(855, 508);
+            this.button1.Location = new System.Drawing.Point(855, 451);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 42);
             this.button1.TabIndex = 54;
+            this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -227,7 +228,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(27, 258);
+            this.label5.Location = new System.Drawing.Point(12, 263);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 23);
             this.label5.TabIndex = 55;
@@ -277,6 +278,7 @@
             // 
             this.txtdiscount.Location = new System.Drawing.Point(129, 363);
             this.txtdiscount.Name = "txtdiscount";
+            this.txtdiscount.ReadOnly = true;
             this.txtdiscount.Size = new System.Drawing.Size(172, 28);
             this.txtdiscount.TabIndex = 50;
             // 
@@ -284,6 +286,7 @@
             // 
             this.txtgiomua.Location = new System.Drawing.Point(129, 307);
             this.txtgiomua.Name = "txtgiomua";
+            this.txtgiomua.ReadOnly = true;
             this.txtgiomua.Size = new System.Drawing.Size(172, 28);
             this.txtgiomua.TabIndex = 49;
             // 
@@ -291,6 +294,7 @@
             // 
             this.txtngaymua.Location = new System.Drawing.Point(129, 263);
             this.txtngaymua.Name = "txtngaymua";
+            this.txtngaymua.ReadOnly = true;
             this.txtngaymua.Size = new System.Drawing.Size(172, 28);
             this.txtngaymua.TabIndex = 48;
             // 
@@ -298,6 +302,7 @@
             // 
             this.txtsotienthua.Location = new System.Drawing.Point(129, 153);
             this.txtsotienthua.Name = "txtsotienthua";
+            this.txtsotienthua.ReadOnly = true;
             this.txtsotienthua.Size = new System.Drawing.Size(172, 28);
             this.txtsotienthua.TabIndex = 47;
             // 
@@ -305,6 +310,7 @@
             // 
             this.txtdiemcong.Location = new System.Drawing.Point(129, 210);
             this.txtdiemcong.Name = "txtdiemcong";
+            this.txtdiemcong.ReadOnly = true;
             this.txtdiemcong.Size = new System.Drawing.Size(172, 28);
             this.txtdiemcong.TabIndex = 46;
             // 
@@ -337,6 +343,7 @@
             // 
             this.txtsoHD.Location = new System.Drawing.Point(129, 96);
             this.txtsoHD.Name = "txtsoHD";
+            this.txtsoHD.ReadOnly = true;
             this.txtsoHD.Size = new System.Drawing.Size(172, 28);
             this.txtsoHD.TabIndex = 58;
             // 
@@ -399,16 +406,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(444, 458);
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(430, 468);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 23);
+            this.label1.Size = new System.Drawing.Size(91, 25);
             this.label1.TabIndex = 52;
             this.label1.Text = "Tổng tiền";
             // 
             // btnthanhtoan
             // 
-            this.btnthanhtoan.Location = new System.Drawing.Point(729, 449);
+            this.btnthanhtoan.Location = new System.Drawing.Point(1042, 451);
             this.btnthanhtoan.Name = "btnthanhtoan";
             this.btnthanhtoan.Size = new System.Drawing.Size(105, 42);
             this.btnthanhtoan.TabIndex = 51;
@@ -458,7 +465,7 @@
             // 
             // btndelete
             // 
-            this.btndelete.Location = new System.Drawing.Point(855, 446);
+            this.btndelete.Location = new System.Drawing.Point(731, 449);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(115, 42);
             this.btndelete.TabIndex = 46;
@@ -486,9 +493,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(535, 458);
+            this.textBox1.Location = new System.Drawing.Point(535, 449);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 20);
+            this.textBox1.Size = new System.Drawing.Size(172, 44);
             this.textBox1.TabIndex = 45;
             // 
             // btnchondo
