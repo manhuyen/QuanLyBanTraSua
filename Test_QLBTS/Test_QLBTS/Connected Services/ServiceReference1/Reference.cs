@@ -218,6 +218,12 @@ namespace Test_QLBTS.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/Check_Topping", ReplyAction="http://tempuri.org/IMy_QLBTS/Check_ToppingResponse")]
         System.Threading.Tasks.Task<bool> Check_ToppingAsync(string matp);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/DoanhThu_DateToDate", ReplyAction="http://tempuri.org/IMy_QLBTS/DoanhThu_DateToDateResponse")]
+        System.Data.DataTable DoanhThu_DateToDate(string From, string To);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMy_QLBTS/DoanhThu_DateToDate", ReplyAction="http://tempuri.org/IMy_QLBTS/DoanhThu_DateToDateResponse")]
+        System.Threading.Tasks.Task<System.Data.DataTable> DoanhThu_DateToDateAsync(string From, string To);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -517,6 +523,14 @@ namespace Test_QLBTS.ServiceReference1 {
         
         public System.Threading.Tasks.Task<bool> Check_ToppingAsync(string matp) {
             return base.Channel.Check_ToppingAsync(matp);
+        }
+        
+        public System.Data.DataTable DoanhThu_DateToDate(string From, string To) {
+            return base.Channel.DoanhThu_DateToDate(From, To);
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataTable> DoanhThu_DateToDateAsync(string From, string To) {
+            return base.Channel.DoanhThu_DateToDateAsync(From, To);
         }
     }
 }

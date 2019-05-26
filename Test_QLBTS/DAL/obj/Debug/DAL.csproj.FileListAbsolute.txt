@@ -34,6 +34,7 @@ C:\Users\ADMIN\Desktop\Test_QLBTS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cac
 C:\Users\ADMIN\Desktop\Test_QLBTS\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\ADMIN\Desktop\Test_QLBTS\DAL\obj\Debug\DAL.dll
 C:\Users\ADMIN\Desktop\Test_QLBTS\DAL\obj\Debug\DAL.pdb
+<<<<<<< HEAD
 C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\DAL\bin\Debug\DAL.dll
 C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\DAL\bin\Debug\DAL.pdb
 C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\DAL\bin\Debug\DTO.dll
@@ -43,3 +44,14 @@ C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\DAL\obj\Debug\DAL.cspro
 C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\DAL\obj\Debug\DAL.dll
 C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\DAL\obj\Debug\DAL.pdb
+=======
+C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DAL\bin\Debug\DAL.dll
+C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DAL\bin\Debug\DAL.pdb
+C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DAL\bin\Debug\DTO.dll
+C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DAL\bin\Debug\DTO.pdb
+C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DAL\obj\Debug\DAL.dll
+C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DAL\obj\Debug\DAL.pdb
+>>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504

@@ -80,4 +80,7 @@ public interface IMy_QLBTS
     [OperationContract]
     bool Check_Topping(string matp);
 
+    [OperationContract]
+    DataTable DoanhThu_DateToDate(string From, string To);
+
 }

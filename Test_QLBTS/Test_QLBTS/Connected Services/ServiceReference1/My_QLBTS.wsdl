@@ -592,6 +592,33 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element name="DoanhThu_DateToDate">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="From" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="To" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DoanhThu_DateToDateResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="DoanhThu_DateToDateResult" nillable="true">
+              <xs:complexType>
+                <xs:annotation>
+                  <xs:appinfo>
+                    <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:sequence>
+                  <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
     </xs:schema>
     <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <xs:element name="anyType" nillable="true" type="xs:anyType" />
@@ -854,6 +881,12 @@
   <wsdl:message name="IMy_QLBTS_Check_Topping_OutputMessage">
     <wsdl:part name="parameters" element="tns:Check_ToppingResponse" />
   </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_DoanhThu_DateToDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoanhThu_DateToDate" />
+  </wsdl:message>
+  <wsdl:message name="IMy_QLBTS_DoanhThu_DateToDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoanhThu_DateToDateResponse" />
+  </wsdl:message>
   <wsdl:portType name="IMy_QLBTS">
     <wsdl:operation name="DoWork">
       <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/DoWork" message="tns:IMy_QLBTS_DoWork_InputMessage" />
@@ -990,6 +1023,10 @@
     <wsdl:operation name="Check_Topping">
       <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/Check_Topping" message="tns:IMy_QLBTS_Check_Topping_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/Check_ToppingResponse" message="tns:IMy_QLBTS_Check_Topping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DoanhThu_DateToDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMy_QLBTS/DoanhThu_DateToDate" message="tns:IMy_QLBTS_DoanhThu_DateToDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMy_QLBTS/DoanhThu_DateToDateResponse" message="tns:IMy_QLBTS_DoanhThu_DateToDate_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IMy_QLBTS" type="tns:IMy_QLBTS">
@@ -1293,6 +1330,15 @@
     </wsdl:operation>
     <wsdl:operation name="Check_Topping">
       <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/Check_Topping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoanhThu_DateToDate">
+      <soap:operation soapAction="http://tempuri.org/IMy_QLBTS/DoanhThu_DateToDate" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

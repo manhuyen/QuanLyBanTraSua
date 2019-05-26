@@ -21,16 +21,16 @@ namespace Test_QLBTS
 
         private void TinhTien_Load(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            SqlConnection sqlConnection = new SqlConnection("Data Source=DESKTOP-I0HUN56\\MSSQLSERVER1;Initial Catalog=N5_T3_QLBanTraSua;Integrated Security=True");
-            sqlConnection.Open();
+            //DataTable dt = new DataTable();
+            //SqlConnection sqlConnection = new SqlConnection(";Initial Catalog=N5_T3_QLBanTraSua;Integrated Security=True");
+            //sqlConnection.Open();
 
-            string query = "select * from HoaDon";
-            SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
-            sqlDataAdapter.Fill(dt);
-            dataGridView1.DataSource = dt;
-            sqlConnection.Close();
+            //string query = "select * from HoaDon";
+            //SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+            //SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+            //sqlDataAdapter.Fill(dt);
+            //dataGridView1.DataSource = dt;
+            //sqlConnection.Close();
         }
     }
 }

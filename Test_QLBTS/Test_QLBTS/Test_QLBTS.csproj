@@ -149,6 +149,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="rpDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpDoanhThu.Designer.cs">
+      <DependentUpon>rpDoanhThu.cs</DependentUpon>
+    </Compile>
+>>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="ThanhVien.cs">
       <SubType>UserControl</SubType>
@@ -170,6 +179,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThucTapNhom_QLBTSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThucTapNhom_QLBTSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ThucTapNhom_QLBTSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThucTapNhom_QLBTSDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TinhTien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -221,6 +240,10 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="rpDoanhThu.rdlc" />
+    <EmbeddedResource Include="rpDoanhThu.resx">
+      <DependentUpon>rpDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThanhVien.resx">
       <DependentUpon>ThanhVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,6 +254,9 @@
     <None Include="Connected Services\ServiceReference1\My_QLBTS.wsdl" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\DataSources\Test_QLBTS.ServiceReference1.IMy_QLBTS.datasource" />
+    <None Include="Properties\DataSources\Test_QLBTS.ServiceReference1.IMy_QLBTSChannel.datasource" />
+    <None Include="Properties\DataSources\Test_QLBTS.ServiceReference1.My_QLBTSClient.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -240,6 +266,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ThucTapNhom_QLBTSDataSet.xsc">
+      <DependentUpon>ThucTapNhom_QLBTSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ThucTapNhom_QLBTSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ThucTapNhom_QLBTSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ThucTapNhom_QLBTSDataSet.xss">
+      <DependentUpon>ThucTapNhom_QLBTSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ThucTapNhom_QLBTSDataSet1.xsc">
+      <DependentUpon>ThucTapNhom_QLBTSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ThucTapNhom_QLBTSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ThucTapNhom_QLBTSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ThucTapNhom_QLBTSDataSet1.xss">
+      <DependentUpon>ThucTapNhom_QLBTSDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">
@@ -354,7 +402,10 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\menu-kai-tea.jpg" />
+=======
+>>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
