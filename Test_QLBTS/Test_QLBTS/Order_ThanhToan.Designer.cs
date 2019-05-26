@@ -196,10 +196,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(855, 508);
+            this.button1.Location = new System.Drawing.Point(1153, 446);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 42);
             this.button1.TabIndex = 54;
+            this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -227,7 +228,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(27, 258);
+            this.label5.Location = new System.Drawing.Point(6, 264);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 23);
             this.label5.TabIndex = 55;
@@ -277,6 +278,7 @@
             // 
             this.txtdiscount.Location = new System.Drawing.Point(129, 363);
             this.txtdiscount.Name = "txtdiscount";
+            this.txtdiscount.ReadOnly = true;
             this.txtdiscount.Size = new System.Drawing.Size(172, 28);
             this.txtdiscount.TabIndex = 50;
             // 
@@ -284,6 +286,7 @@
             // 
             this.txtgiomua.Location = new System.Drawing.Point(129, 307);
             this.txtgiomua.Name = "txtgiomua";
+            this.txtgiomua.ReadOnly = true;
             this.txtgiomua.Size = new System.Drawing.Size(172, 28);
             this.txtgiomua.TabIndex = 49;
             // 
@@ -291,6 +294,7 @@
             // 
             this.txtngaymua.Location = new System.Drawing.Point(129, 263);
             this.txtngaymua.Name = "txtngaymua";
+            this.txtngaymua.ReadOnly = true;
             this.txtngaymua.Size = new System.Drawing.Size(172, 28);
             this.txtngaymua.TabIndex = 48;
             // 
@@ -298,6 +302,7 @@
             // 
             this.txtsotienthua.Location = new System.Drawing.Point(129, 153);
             this.txtsotienthua.Name = "txtsotienthua";
+            this.txtsotienthua.ReadOnly = true;
             this.txtsotienthua.Size = new System.Drawing.Size(172, 28);
             this.txtsotienthua.TabIndex = 47;
             // 
@@ -305,6 +310,7 @@
             // 
             this.txtdiemcong.Location = new System.Drawing.Point(129, 210);
             this.txtdiemcong.Name = "txtdiemcong";
+            this.txtdiemcong.ReadOnly = true;
             this.txtdiemcong.Size = new System.Drawing.Size(172, 28);
             this.txtdiemcong.TabIndex = 46;
             // 
@@ -337,6 +343,7 @@
             // 
             this.txtsoHD.Location = new System.Drawing.Point(129, 96);
             this.txtsoHD.Name = "txtsoHD";
+            this.txtsoHD.ReadOnly = true;
             this.txtsoHD.Size = new System.Drawing.Size(172, 28);
             this.txtsoHD.TabIndex = 58;
             // 
@@ -382,7 +389,7 @@
             this.Column20});
             this.dataGridView2.Location = new System.Drawing.Point(3, 3);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(250, 368);
+            this.dataGridView2.Size = new System.Drawing.Size(234, 368);
             this.dataGridView2.TabIndex = 0;
             // 
             // Column6
@@ -408,7 +415,7 @@
             // 
             // btnthanhtoan
             // 
-            this.btnthanhtoan.Location = new System.Drawing.Point(729, 449);
+            this.btnthanhtoan.Location = new System.Drawing.Point(1042, 446);
             this.btnthanhtoan.Name = "btnthanhtoan";
             this.btnthanhtoan.Size = new System.Drawing.Size(105, 42);
             this.btnthanhtoan.TabIndex = 51;
@@ -645,7 +652,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 562);
+            this.ClientSize = new System.Drawing.Size(1370, 561);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox1);
@@ -664,7 +671,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Order_ThanhToan";
-            this.Text = "Order_ThanhToan";
+            this.Text = "Chọn đồ uống";
             this.Load += new System.EventHandler(this.Order_ThanhToan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -690,17 +697,6 @@
 
         private System.Windows.Forms.TextBox txtsotienKhdua;
         private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
-        private System.Windows.Forms.DataGridViewButtonColumn Column15;
-        private System.Windows.Forms.DataGridViewButtonColumn Column16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
@@ -749,5 +745,16 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn Column17;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewButtonColumn Column15;
+        private System.Windows.Forms.DataGridViewButtonColumn Column16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
     }
 }

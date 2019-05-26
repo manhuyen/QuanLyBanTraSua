@@ -35,7 +35,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bttinhtien = new System.Windows.Forms.Button();
             this.btdiscount = new System.Windows.Forms.Button();
             this.btthanhvien = new System.Windows.Forms.Button();
             this.btmenu = new System.Windows.Forms.Button();
@@ -53,7 +52,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1010, 87);
             this.panel1.TabIndex = 0;
@@ -85,7 +84,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(76, 60);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(146, 20);
             this.textBox1.TabIndex = 2;
@@ -116,35 +115,22 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkKhaki;
-            this.panel2.Controls.Add(this.bttinhtien);
             this.panel2.Controls.Add(this.btdiscount);
             this.panel2.Controls.Add(this.btthanhvien);
             this.panel2.Controls.Add(this.btmenu);
             this.panel2.Location = new System.Drawing.Point(0, 94);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(221, 554);
             this.panel2.TabIndex = 1;
             // 
-            // bttinhtien
-            // 
-            this.bttinhtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttinhtien.Location = new System.Drawing.Point(2, 93);
-            this.bttinhtien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bttinhtien.Name = "bttinhtien";
-            this.bttinhtien.Size = new System.Drawing.Size(219, 26);
-            this.bttinhtien.TabIndex = 3;
-            this.bttinhtien.Text = ">> Tính Tiền<<";
-            this.bttinhtien.UseVisualStyleBackColor = true;
-            this.bttinhtien.Click += new System.EventHandler(this.bttinhtien_Click);
-            // 
             // btdiscount
             // 
             this.btdiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btdiscount.Location = new System.Drawing.Point(2, 62);
-            this.btdiscount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btdiscount.Location = new System.Drawing.Point(2, 277);
+            this.btdiscount.Margin = new System.Windows.Forms.Padding(2);
             this.btdiscount.Name = "btdiscount";
-            this.btdiscount.Size = new System.Drawing.Size(217, 26);
+            this.btdiscount.Size = new System.Drawing.Size(217, 84);
             this.btdiscount.TabIndex = 2;
             this.btdiscount.Text = ">>Order - Thanh Toán<<";
             this.btdiscount.UseVisualStyleBackColor = true;
@@ -153,10 +139,10 @@
             // btthanhvien
             // 
             this.btthanhvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btthanhvien.Location = new System.Drawing.Point(0, 31);
-            this.btthanhvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btthanhvien.Location = new System.Drawing.Point(0, 145);
+            this.btthanhvien.Margin = new System.Windows.Forms.Padding(2);
             this.btthanhvien.Name = "btthanhvien";
-            this.btthanhvien.Size = new System.Drawing.Size(219, 26);
+            this.btthanhvien.Size = new System.Drawing.Size(219, 79);
             this.btthanhvien.TabIndex = 1;
             this.btthanhvien.Text = ">> Thành Viên<<";
             this.btthanhvien.UseVisualStyleBackColor = true;
@@ -165,10 +151,10 @@
             // btmenu
             // 
             this.btmenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmenu.Location = new System.Drawing.Point(0, 0);
-            this.btmenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btmenu.Location = new System.Drawing.Point(0, 23);
+            this.btmenu.Margin = new System.Windows.Forms.Padding(2);
             this.btmenu.Name = "btmenu";
-            this.btmenu.Size = new System.Drawing.Size(219, 26);
+            this.btmenu.Size = new System.Drawing.Size(219, 79);
             this.btmenu.TabIndex = 0;
             this.btmenu.Text = ">> Menu<<";
             this.btmenu.UseVisualStyleBackColor = true;
@@ -177,7 +163,7 @@
             // panel3
             // 
             this.panel3.Location = new System.Drawing.Point(226, 94);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(784, 554);
             this.panel3.TabIndex = 2;
@@ -190,7 +176,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Main";
             this.Text = "Main";
             this.panel1.ResumeLayout(false);
@@ -209,7 +195,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button bttinhtien;
         private System.Windows.Forms.Button btdiscount;
         private System.Windows.Forms.Button btthanhvien;
         private System.Windows.Forms.Button btmenu;
