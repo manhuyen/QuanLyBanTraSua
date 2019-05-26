@@ -63,7 +63,12 @@ namespace Test_QLBTS
 
         }
 
-        
+        private void bttinhtien_Click(object sender, EventArgs e)
+        {
+            panel3.Controls.Clear();
+            TinhTien t = new TinhTien();
+            panel3.Controls.Add(t);
+        }
 
         private void btdiscount_Click(object sender, EventArgs e)
         {

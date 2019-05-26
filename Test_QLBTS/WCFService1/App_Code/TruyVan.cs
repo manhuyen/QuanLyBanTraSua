@@ -59,7 +59,7 @@ public class TruyVan:DB_Connection
     }
     public bool Xoa_DoUong(int madu)
     {
-        string query = "delete Douong where MaDU="+madu;
+        string query = "update DongHD set MaDU=null where MaDU="+ madu+" delete Douong where MaDU="+madu;
         Load_DB(query);
         return true;
     }

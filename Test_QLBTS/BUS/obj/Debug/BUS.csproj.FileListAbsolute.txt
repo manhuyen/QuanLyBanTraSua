@@ -42,19 +42,6 @@ C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cac
 C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\obj\Debug\BUS.dll
 C:\Users\ADMIN\Desktop\Test_QLBTS\BUS\obj\Debug\BUS.pdb
-<<<<<<< HEAD
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\BUS\bin\Debug\BUS.dll
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\BUS\bin\Debug\BUS.pdb
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\BUS\bin\Debug\DAL.dll
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\BUS\bin\Debug\DTO.dll
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\BUS\bin\Debug\DAL.pdb
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\BUS\bin\Debug\DTO.pdb
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\BUS\obj\Debug\BUS.csproj.CopyComplete
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\BUS\obj\Debug\BUS.dll
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\BUS\obj\Debug\BUS.pdb
-=======
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\BUS\bin\Debug\BUS.dll
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\BUS\bin\Debug\BUS.pdb
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\BUS\bin\Debug\DAL.dll
@@ -66,4 +53,3 @@ C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\BUS\obj\Debug\BUS.csproj.
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\BUS\obj\Debug\BUS.dll
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\BUS\obj\Debug\BUS.pdb
->>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504

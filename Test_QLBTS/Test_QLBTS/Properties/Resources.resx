@@ -118,92 +118,89 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tradaocamsa3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tradaocamsa3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trasuavocambacha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trasuavocambacha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bg12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg12.htm;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="epchanh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\epchanh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trachinh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trachinh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="epchanhday" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\epchanhday.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="epduahau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\epduahau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="epoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\epoi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="epsori" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\epsori.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Topping2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Topping2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trasuasocola" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trasuasocola.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Topping5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Topping5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="phuclong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phuclong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="vocambacha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vocambacha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Topping4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Topping4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="machiatochocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\machiatochocolate.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Topping8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Topping8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tradaocamsa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tradaocamsa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="phuclong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phuclong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tmrUpdate.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>12, 17</value>
   </data>
-  <data name="Topping6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Topping6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Topping1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Topping2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Topping3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Topping3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="epoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\epoi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Topping4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="xoai2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\xoai2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Topping5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Topping1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Topping1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Topping9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Topping9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bg12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg12.htm;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="epchanhday" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\epchanhday.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Topping6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Topping7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Topping7.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tradaocamsa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tradaocamsa2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Topping8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="epduahau" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\epduahau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Topping9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Topping9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="xoai" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\xoai.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trachinh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trachinh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tradao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tradao.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu-kai-tea" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu-kai-tea.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tradaocamsa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tradaocamsa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tradaocamsa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tradaocamsa2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tradaocamsa3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tradaocamsa3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trasuasocola" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trasuasocola.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trasuavocambacha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trasuavocambacha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vocambacha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vocambacha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xoai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xoai.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xoai2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xoai2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

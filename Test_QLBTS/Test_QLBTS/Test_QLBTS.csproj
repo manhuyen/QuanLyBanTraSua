@@ -149,15 +149,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-=======
     <Compile Include="rpDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="rpDoanhThu.Designer.cs">
       <DependentUpon>rpDoanhThu.cs</DependentUpon>
     </Compile>
->>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="ThanhVien.cs">
       <SubType>UserControl</SubType>
@@ -402,10 +399,6 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <None Include="Resources\menu-kai-tea.jpg" />
-=======
->>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

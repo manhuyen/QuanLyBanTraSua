@@ -52,11 +52,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 2);
-<<<<<<< HEAD
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-=======
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1528, 107);
             this.panel1.TabIndex = 0;
@@ -85,13 +81,8 @@
             // 
             // textBox1
             // 
-<<<<<<< HEAD
-            this.textBox1.Location = new System.Drawing.Point(76, 60);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-=======
             this.textBox1.Location = new System.Drawing.Point(101, 74);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(193, 22);
             this.textBox1.TabIndex = 2;
@@ -123,13 +114,8 @@
             this.panel2.Controls.Add(this.btdiscount);
             this.panel2.Controls.Add(this.btthanhvien);
             this.panel2.Controls.Add(this.btmenu);
-<<<<<<< HEAD
-            this.panel2.Location = new System.Drawing.Point(0, 94);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-=======
             this.panel2.Location = new System.Drawing.Point(0, 116);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(295, 685);
             this.panel2.TabIndex = 1;
@@ -137,17 +123,10 @@
             // btdiscount
             // 
             this.btdiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.btdiscount.Location = new System.Drawing.Point(2, 277);
-            this.btdiscount.Margin = new System.Windows.Forms.Padding(2);
-            this.btdiscount.Name = "btdiscount";
-            this.btdiscount.Size = new System.Drawing.Size(217, 84);
-=======
             this.btdiscount.Location = new System.Drawing.Point(3, 76);
             this.btdiscount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btdiscount.Name = "btdiscount";
             this.btdiscount.Size = new System.Drawing.Size(289, 32);
->>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504
             this.btdiscount.TabIndex = 2;
             this.btdiscount.Text = ">>Order - Thanh Toán<<";
             this.btdiscount.UseVisualStyleBackColor = true;
@@ -156,17 +135,10 @@
             // btthanhvien
             // 
             this.btthanhvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.btthanhvien.Location = new System.Drawing.Point(0, 145);
-            this.btthanhvien.Margin = new System.Windows.Forms.Padding(2);
-            this.btthanhvien.Name = "btthanhvien";
-            this.btthanhvien.Size = new System.Drawing.Size(219, 79);
-=======
             this.btthanhvien.Location = new System.Drawing.Point(0, 38);
             this.btthanhvien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btthanhvien.Name = "btthanhvien";
             this.btthanhvien.Size = new System.Drawing.Size(292, 32);
->>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504
             this.btthanhvien.TabIndex = 1;
             this.btthanhvien.Text = ">> Thành Viên<<";
             this.btthanhvien.UseVisualStyleBackColor = true;
@@ -175,17 +147,10 @@
             // btmenu
             // 
             this.btmenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.btmenu.Location = new System.Drawing.Point(0, 23);
-            this.btmenu.Margin = new System.Windows.Forms.Padding(2);
-            this.btmenu.Name = "btmenu";
-            this.btmenu.Size = new System.Drawing.Size(219, 79);
-=======
             this.btmenu.Location = new System.Drawing.Point(0, 0);
             this.btmenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btmenu.Name = "btmenu";
             this.btmenu.Size = new System.Drawing.Size(292, 32);
->>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504
             this.btmenu.TabIndex = 0;
             this.btmenu.Text = ">> Menu<<";
             this.btmenu.UseVisualStyleBackColor = true;
@@ -193,13 +158,8 @@
             // 
             // panel3
             // 
-<<<<<<< HEAD
-            this.panel3.Location = new System.Drawing.Point(226, 94);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-=======
             this.panel3.Location = new System.Drawing.Point(301, 116);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1227, 685);
             this.panel3.TabIndex = 2;
@@ -212,11 +172,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-<<<<<<< HEAD
-            this.Margin = new System.Windows.Forms.Padding(2);
-=======
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504
             this.Name = "Main";
             this.Text = "Main";
             this.panel1.ResumeLayout(false);

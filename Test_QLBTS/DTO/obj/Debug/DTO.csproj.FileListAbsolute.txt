@@ -21,13 +21,6 @@ C:\Users\ADMIN\Desktop\Test_QLBTS\DTO\obj\Debug\DTO.csprojAssemblyReference.cach
 C:\Users\ADMIN\Desktop\Test_QLBTS\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\Desktop\Test_QLBTS\DTO\obj\Debug\DTO.dll
 C:\Users\ADMIN\Desktop\Test_QLBTS\DTO\obj\Debug\DTO.pdb
-<<<<<<< HEAD
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\DTO\bin\Debug\DTO.dll
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\DTO\bin\Debug\DTO.pdb
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\DTO\obj\Debug\DTO.dll
-C:\Users\Dinh Dan\Desktop\ttn\QuanLyBanTraSua\Test_QLBTS\DTO\obj\Debug\DTO.pdb
-=======
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DTO\bin\Debug\DTO.dll
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DTO\bin\Debug\DTO.pdb
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
@@ -35,4 +28,3 @@ C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DTO\obj\Debug\DTO.csproj.
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DTO\obj\Debug\DTO.dll
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DTO\obj\Debug\DTO.pdb
 C:\Users\ADMIN\Desktop\Git\QuanLyBanTraSua\Test_QLBTS\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
->>>>>>> 0c83102fb98aeae84cd240e4f395ee33f7769504
