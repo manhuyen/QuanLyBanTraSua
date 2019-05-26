@@ -27,3 +27,4 @@ C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DTO\obj\Debug\DTO.csprojA
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DTO\obj\Debug\DTO.dll
 C:\Users\LapTop\Desktop\git\QuanLyBanTraSua\Test_QLBTS\DTO\obj\Debug\DTO.pdb
+C:\Users\ADMIN\Desktop\Git\QuanLyBanTraSua\Test_QLBTS\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
